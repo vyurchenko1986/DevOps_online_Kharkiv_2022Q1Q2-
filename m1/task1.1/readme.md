@@ -204,6 +204,9 @@ git add readme.md
 git commit -m "Make file readme.md in folder task1.1 and describe results of your work with Git"
 ```
 
-##### 28. Describe in your own words what DevOps is. Try to use not more 50 words. []
+##### 28. Describe in your own words what DevOps is. Try to use not more 50 words. [OK]
 Do not use ctrl-C/ctrl-V.
-##### 29. Insert your text about DevOps in readme.md. []
+
+DevOps (англ. Development & Operations — «разработка и эксплуатация») — это методология разработки ПО, задача которой — наладить взаимодействие программистов и сисадминов в компании.
+
+##### 29. Insert your text about DevOps in readme.md. [OK]
