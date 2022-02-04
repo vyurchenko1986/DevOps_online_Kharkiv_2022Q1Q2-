@@ -1,0 +1,19 @@
+2ac4a9b HEAD@{0}: merge develop: Fast-forward
+adc90f8 HEAD@{1}: checkout: moving from main to main
+adc90f8 HEAD@{2}: checkout: moving from develop to main
+2ac4a9b HEAD@{3}: commit (merge): merged and resolved the conflict in index.html
+9e96ce2 HEAD@{4}: checkout: moving from develop to develop
+9e96ce2 HEAD@{5}: merge images: Fast-forward
+a0dde11 HEAD@{6}: checkout: moving from develop to develop
+a0dde11 HEAD@{7}: checkout: moving from styles to develop
+fdac71c HEAD@{8}: commit: Change your index.html add link css file
+e4d8fa2 HEAD@{9}: commit: Create branch with name styles. Add styles folder with styles source inside it.
+a0dde11 HEAD@{10}: checkout: moving from develop to styles
+a0dde11 HEAD@{11}: checkout: moving from images to develop
+9e96ce2 HEAD@{12}: commit: Change your index.html. Add images source inside it.
+5d046ac HEAD@{13}: commit: Create branch with name images. Add images folder with some images inside it.
+a0dde11 HEAD@{14}: checkout: moving from develop to images
+a0dde11 HEAD@{15}: commit: Create index.html empty file.
+adc90f8 HEAD@{16}: checkout: moving from main to develop
+adc90f8 HEAD@{17}: commit: Create empty readme.txt file.
+5dfe34f HEAD@{18}: clone: from git@github.com:vyurchenko1986/DevOps_online_Kharkiv_2022Q1Q2-.git
