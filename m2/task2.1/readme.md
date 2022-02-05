@@ -14,6 +14,8 @@ TASK 2.1
 
 1.2 From the official VirtualBox site [2] download the latest stable version of VirtualBox according to the host operating system (OS) installed on the student's workplace. For Windows, the file may be called, for example, VirtualBox-6.1.10-138449-Win.exe. Install VirtualBox.
 
+![Image alt](img/chrome_jP82QCUtpN.gif){:height="200px" width="200px"}
+
 ![Image alt](img/chrome_jP82QCUtpN.gif)
 ![Image alt](img/VirtualBox_fqS5cOGAvb.png)
 ![Image alt](img/VirtualBox_kg7p6HiS0U.png)
