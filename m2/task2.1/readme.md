@@ -14,6 +14,10 @@ TASK 2.1
 
 1.2 From the official VirtualBox site [2] download the latest stable version of VirtualBox according to the host operating system (OS) installed on the student's workplace. For Windows, the file may be called, for example, VirtualBox-6.1.10-138449-Win.exe. Install VirtualBox.
 
+![Image alt](img/chrome_jP82QCUtpN.gif)
+![Image alt](img/VirtualBox_fqS5cOGAvb.png)
+![Image alt](img/VirtualBox_kg7p6HiS0U.png)
+
 1.3 Download the latest stable version of Ubuntu Desktop or Ubuntu Server from the official site [3].
 
 1.4 Create VM1 and install Ubuntu using the instructions [1, chapter 1.8]. Set machine name as "host machine name"_"student last name"
