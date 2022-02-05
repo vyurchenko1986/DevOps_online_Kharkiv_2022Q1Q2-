@@ -20,6 +20,8 @@ TASK 2.1
 
 1.3 Download the latest stable version of Ubuntu Desktop or Ubuntu Server from the official site [3].
 
+![Image alt](img/chrome_OHrGB4Xfoh.png)
+
 1.4 Create VM1 and install Ubuntu using the instructions [1, chapter 1.8]. Set machine name as "host machine name"_"student last name"
 
 1.5 Get acquainted with the possibilities of VM1 control - start, stop, reboot, save state, use Host key and keyboard shortcuts, mouse capture, etc. [1, ch.1.9].
