@@ -5,6 +5,12 @@ TASK 2.1
 ## PART 1. HYPERVISORS
 1. What are the most popular hypervisors for infrastructure virtualization?
 
+* VMware vSphere / ESXi
+* Microsoft Windows Server 2012 Hyper-V (or the free Hyper-V Server 2012)
+* Xen / Citrix XenServer
+* Red Hat Enterprise Virtualization (RHEV)
+* KVM
+
 2. Briefly describe the main differences of the most popular hypervisors.
 
 ## PART 2. WORK WITH VIRTUALBOX
