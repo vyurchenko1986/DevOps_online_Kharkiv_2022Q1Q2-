@@ -34,6 +34,8 @@ TASK 2.1
 
 1.6 Clone an existing VM1 by creating a VM2 [1, ch.1.14].
 
+![Image alt](img/1-6_VirtualBox_dfcu9vOYuk.gif)
+
 1.7 Create a group of two VM: VM1, VM2 and learn the functions related to groups [1, ch.1.10].
 
 1.8 For VM1, changing its state, take several different snapshots, forming a branched tree of snapshots [1, ch.1.11]
