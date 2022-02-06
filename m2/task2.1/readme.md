@@ -38,6 +38,8 @@ TASK 2.1
 
 1.7 Create a group of two VM: VM1, VM2 and learn the functions related to groups [1, ch.1.10].
 
+![Image alt](img/7-1_VirtualBox_OwFcS6RZ5s.gif)
+
 1.8 For VM1, changing its state, take several different snapshots, forming a branched tree of snapshots [1, ch.1.11]
 
 1.9 Export VM1. Save the *.ova file to disk. Import VM from *.ova file [1, ch.1.15].
