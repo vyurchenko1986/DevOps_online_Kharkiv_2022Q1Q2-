@@ -66,6 +66,8 @@ TASK 2.1
 
 2.4 Configure different network modes for VM1, VM2. Check the connection between VM1, VM2, Host, Internet for different network modes. You can use the ping command to do this. Make a table of possible connections.
 
+![Image alt](img/2-4_VirtualBox_UzHoiObvvN.png)
+
 Each of the networking adapters can be separately configured to operate in one of the following modes:
 
 - Not attached. In this mode, Oracle VM VirtualBox reports to the guest that a network card is present, but that there is no connection. This is as if no Ethernet cable was plugged into the card. Using this mode, it is possible to pull the virtual Ethernet cable and disrupt the connection, which can be useful to inform a guest operating system that no network connection is available and enforce a reconfiguration.
