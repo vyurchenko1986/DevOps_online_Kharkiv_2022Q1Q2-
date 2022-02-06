@@ -137,6 +137,8 @@ vboxmanage
 ## PART 3. WORK WITH VAGRANT
 1. Download the required version of Vagrant according to the instructions [5] and according to the host operating system (OS) installed on the student's workplace. For Windows, the file may be called, for example, vagrant_2.2.0_x86_64.msi. Install Vagrant. Check the path to Vagrant bin in the Path variable (My computer -> Properties -> Advanced system settings -> Advanced -> Environment Variables).
 
+![Image alt](img/3_2_cmd_IyaP7INUez.png)
+
 2. Run the powershell. Create a folder "student name" (in English). In this example, create a folder vagrant_test. Next, go to the folder.
 
 3. Initialize the environment with the default Vagrant box: init hashicorp/precise64
