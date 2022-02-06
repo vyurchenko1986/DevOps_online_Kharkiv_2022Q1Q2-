@@ -153,6 +153,8 @@ vboxmanage
 
 5. Connect to the VM using the program MobaXterm or PuTTY (can be downloaded from [6]), using SSH, IP address and port listed above (127.0.0.1:2222). By default, login - vagrant and password are also vagrant
 
+![Image alt](img/PART3_Item_5_MobaXterm_nTnmhb42Ak.gif)
+
 6. Record the date and time by executing the date command
 
 7. Stop and delete the created VM.
