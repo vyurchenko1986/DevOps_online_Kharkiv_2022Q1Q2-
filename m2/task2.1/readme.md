@@ -42,6 +42,8 @@ TASK 2.1
 
 1.8 For VM1, changing its state, take several different snapshots, forming a branched tree of snapshots [1, ch.1.11]
 
+![Image alt](img/1-8_VirtualBox_iWV7jImun3.gif)
+
 1.9 Export VM1. Save the *.ova file to disk. Import VM from *.ova file [1, ch.1.15].
 
 2. Configuration of virtual machines
