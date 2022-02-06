@@ -149,6 +149,8 @@ vboxmanage
 
 4. Run vagrant up and watch for messages during VM boot and startup.
 
+![Image alt](img/PART3_Item_4_powershell_HjyraPOLqz.gif)
+
 5. Connect to the VM using the program MobaXterm or PuTTY (can be downloaded from [6]), using SSH, IP address and port listed above (127.0.0.1:2222). By default, login - vagrant and password are also vagrant
 
 6. Record the date and time by executing the date command
