@@ -62,6 +62,8 @@ TASK 2.1
 
 2.3 Configure a shared folder to exchange data between the virtual machine and the host [1, ch.4.3].
 
+![Image alt](img/2-3_VirtualBox_xZFw6idoHg.gif)
+
 2.4 Configure different network modes for VM1, VM2. Check the connection between VM1, VM2, Host, Internet for different network modes. You can use the ping command to do this. Make a table of possible connections.
 
 3. Work with CLI through VBoxManage.
