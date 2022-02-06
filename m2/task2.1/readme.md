@@ -24,6 +24,10 @@ TASK 2.1
 
 1.4 Create VM1 and install Ubuntu using the instructions [1, chapter 1.8]. Set machine name as "host machine name"_"student last name"
 
+![Image alt](img/1-4_1_VirtualBox_twQ1Pe583v.png)
+![Image alt](img/1-4_2_VirtualBoxVM_Qyy45rBu0x.gif)
+![Image alt](img/1-4_3_VirtualBox_twQ1Pe583v.png)
+
 1.5 Get acquainted with the possibilities of VM1 control - start, stop, reboot, save state, use Host key and keyboard shortcuts, mouse capture, etc. [1, ch.1.9].
 
 1.6 Clone an existing VM1 by creating a VM2 [1, ch.1.14].
