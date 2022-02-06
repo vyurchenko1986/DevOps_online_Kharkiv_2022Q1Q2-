@@ -54,6 +54,8 @@ TASK 2.1
 
 2.1 Explore VM configuration options (general settings, system settings, display, storage, audio, network, etc.).
 
+![Image alt](img/2-1_VirtualBox_n2dlcHPQrL.gif)
+
 2.2 Configure the USB to connect the USB ports of the host machine to the VM [1, ch.3.11].
 
 2.3 Configure a shared folder to exchange data between the virtual machine and the host [1, ch.4.3].
