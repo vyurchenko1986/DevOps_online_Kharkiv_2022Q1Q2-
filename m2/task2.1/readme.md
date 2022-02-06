@@ -73,8 +73,8 @@ TASK 2.1
 | Host-only  |    +    |    +       |    +    |     -      |    -       |
 | Internal   |    -    |    -       |    +    |     -      |    -       |
 | Bridged    |    +    |    +       |    +    |     +      |    +       |
-| NAT        |    +    |Port forward|    +    |     -      |Port forward|
-| NATservice |    +    |Port forward|    +    |     -      |Port forward|
+| NAT        |    +    |Port forward|    -    |     +      |Port forward|
+| NATservice |    +    |Port forward|    +    |     +      |Port forward|
 
 3. Work with CLI through VBoxManage.
 
