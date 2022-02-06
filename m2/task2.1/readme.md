@@ -166,8 +166,34 @@ vagrant halt
 vagrant destroy
 vagrant box remove 'hashicorp/precise64'
 ```
-8. Create your own Vagrant box [7] 
+8. Create your own Vagrant box [7]
+ 
+```
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
 
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "ubuntu/bionic64"
+  config.vm.hostname = "vm-yurchenko_fl-cow"
+
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ["modifyvm", :id, "--cpus", "2"]
+    vb.customize ["modifyvm", :id, "--cpuexecutioncap", "32"]
+    vb.customize ["modifyvm", :id, "--memory", "1024"]
+    vb.name = "vm-yurchenko_fl-cow"
+  end
+
+  $script = <<-SCRIPT
+  export DEBIAN_FRONTEND=noninteractive
+  sudo apt-get update
+  sudo apt install fl-cow -y
+  SCRIPT
+
+  config.vm.provision "shell", inline: $script
+end
+```
 9. (optional) Create a test environment from a few servers. Servers' parameters are chosen independently by the student.
 
 # REFERENCES
