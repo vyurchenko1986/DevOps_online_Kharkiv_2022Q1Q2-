@@ -66,6 +66,16 @@ TASK 2.1
 
 2.4 Configure different network modes for VM1, VM2. Check the connection between VM1, VM2, Host, Internet for different network modes. You can use the ping command to do this. Make a table of possible connections.
 
+### Table 2.4.1. Overview of Networking Modes
+
+| Mode       | VM→Host | VM←Host    | VM1↔VM2 | VM→Net/LAN | VM←Net/LAN |
+| -----------|:-------:|:----------:|:-------:|:----------:|:----------:|
+| Host-only  |    +    |    +       |    +    |     -      |    -       |
+| Internal   |    -    |    -       |    +    |     -      |    -       |
+| Bridged    |    +    |    +       |    +    |     +      |    +       |
+| NAT        |    +    |Port forward|    +    |     -      |Port forward|
+| NATservice |    +    |Port forward|    +    |     -      |Port forward|
+
 3. Work with CLI through VBoxManage.
 
 3.1 Run the cmd.exe command line.
