@@ -104,6 +104,18 @@ The following sub-modes are available:
 
 3.1 Run the cmd.exe command line.
 
+![Image alt](img/3-1_cmd_x7Bn6RWJI6.gif)
+
+Add Virtualbox folder to system PATH environment variable:
+
+```
+SET PATH=%PATH%;C:\Program Files\Oracle\VirtualBox
+```
+Check VboxManage Command:
+
+```
+vboxmanage
+```
 3.2 Examine the purpose and execute the basic commands of VBoxManage list, showvminfo, createvm, startvm, modifyvm, clonevm, snapshot, controlvm [1, ch.8].
 
 ## PART 3. WORK WITH VAGRANT
