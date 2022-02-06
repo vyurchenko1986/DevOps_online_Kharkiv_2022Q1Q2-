@@ -118,6 +118,22 @@ vboxmanage
 ```
 3.2 Examine the purpose and execute the basic commands of VBoxManage list, showvminfo, createvm, startvm, modifyvm, clonevm, snapshot, controlvm [1, ch.8].
 
++ The VBoxManage list command gives relevant information about your system and information about Oracle VM VirtualBox's current settings.
+
++ The VBoxManage showvminfo command shows information about a particular virtual machine.
+
++ The VBoxManage createvm command creates a new XML virtual machine definition file.
+
++ This VBoxManage startvm command starts a virtual machine that is currently in the Powered Off or Saved states.
+
++ This VBoxManage modifyvm command changes the properties of a registered virtual machine which is not running.
+
++ The VBoxManage clonevm command creates a clone of an existing virtual machine (VM). The clone can be a full copy of the VM or a linked copy of a VM.
+
++ The VBoxManage snapshot command manages snapshots.
+
++ The VBoxManage controlvm subcommand enables you to change the state of a virtual machine that is currently running.
+
 ## PART 3. WORK WITH VAGRANT
 1. Download the required version of Vagrant according to the instructions [5] and according to the host operating system (OS) installed on the student's workplace. For Windows, the file may be called, for example, vagrant_2.2.0_x86_64.msi. Install Vagrant. Check the path to Vagrant bin in the Path variable (My computer -> Properties -> Advanced system settings -> Advanced -> Environment Variables).
 
