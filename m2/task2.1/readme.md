@@ -145,6 +145,8 @@ vboxmanage
 
 3. Initialize the environment with the default Vagrant box: init hashicorp/precise64
 
+![Image alt](img/PART3_Item_3_powershell_bFkk1S4Tnw.gif)
+
 4. Run vagrant up and watch for messages during VM boot and startup.
 
 5. Connect to the VM using the program MobaXterm or PuTTY (can be downloaded from [6]), using SSH, IP address and port listed above (127.0.0.1:2222). By default, login - vagrant and password are also vagrant
