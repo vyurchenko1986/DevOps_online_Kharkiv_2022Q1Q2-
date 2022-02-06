@@ -30,6 +30,8 @@ TASK 2.1
 
 1.5 Get acquainted with the possibilities of VM1 control - start, stop, reboot, save state, use Host key and keyboard shortcuts, mouse capture, etc. [1, ch.1.9].
 
+![Image alt](img/1-5_VirtualBoxVM_s2wmFl8FQI.gif)
+
 1.6 Clone an existing VM1 by creating a VM2 [1, ch.1.14].
 
 1.7 Create a group of two VM: VM1, VM2 and learn the functions related to groups [1, ch.1.10].
