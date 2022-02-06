@@ -161,6 +161,11 @@ vboxmanage
 
 7. Stop and delete the created VM.
 
+```
+vagrant halt
+vagrant destroy
+vagrant box remove 'hashicorp/precise64'
+```
 8. Create your own Vagrant box [7] 
 
 9. (optional) Create a test environment from a few servers. Servers' parameters are chosen independently by the student.
