@@ -141,6 +141,8 @@ vboxmanage
 
 2. Run the powershell. Create a folder "student name" (in English). In this example, create a folder vagrant_test. Next, go to the folder.
 
+![Image alt](img/PART3_Item_1_powershell_gz4tP12Pid.png)
+
 3. Initialize the environment with the default Vagrant box: init hashicorp/precise64
 
 4. Run vagrant up and watch for messages during VM boot and startup.
