@@ -47,6 +47,8 @@ TASK 2.1
 1.9 Export VM1. Save the *.ova file to disk. Import VM from *.ova file [1, ch.1.15].
 
 ![Image alt](img/1-9_1_VirtualBox_1WY3H0TEs8.gif)
+![Image alt](img/1-9_2_VirtualBox_1WY3H0TEs8.gif)
+![Image alt](img/1-9_3_VirtualBox_wOSxGlCguq.png)
 
 2. Configuration of virtual machines
 
