@@ -157,6 +157,8 @@ vboxmanage
 
 6. Record the date and time by executing the date command
 
+![Image alt](img/PART3_Item_6_MobaXterm_3BKR8ZTsg0.png)
+
 7. Stop and delete the created VM.
 
 8. Create your own Vagrant box [7] 
