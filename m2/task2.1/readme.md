@@ -213,7 +213,35 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", inline: $script
 end
 ```
+
 9. (optional) Create a test environment from a few servers. Servers' parameters are chosen independently by the student.
+
+```
+nodes = [
+  { :hostname => 'cowsay1', :ram => 512 },
+  { :hostname => 'cowsay2', :ram => 512 }
+]
+ 
+Vagrant.configure("2") do |config|
+  nodes.each do |node|
+    config.vm.define node[:hostname] do |nodeconfig|
+      nodeconfig.vm.box = 'ubuntu/bionic64'
+      nodeconfig.vm.hostname = node[:hostname]
+
+      memory = node[:ram]
+      nodeconfig.vm.provider :virtualbox do |vb|
+        vb.customize [ "modifyvm", :id, "--memory", memory.to_s ]
+        vb.customize [ "modifyvm", :id, "--audio", "none" ]
+      end
+ 
+      nodeconfig.vm.provision "shell" do |s|
+        s.inline = "sudo apt-get update && sudo apt install cowsay -y"
+      end
+    end
+  end
+ 
+end
+```
 
 # REFERENCES
 1. Oracle VM VirtualBox.User Manual https://www.virtualbox.org/manual/
