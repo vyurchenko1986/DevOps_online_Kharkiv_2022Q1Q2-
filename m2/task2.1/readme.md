@@ -13,6 +13,18 @@ TASK 2.1
 
 2. Briefly describe the main differences of the most popular hypervisors.
 
+* __VMware vSphere__. VMware vSphere includes the ESXi hypervisor and vCenter management software to provide a suite of virtualization products, such as the vSphere Client, vSphere software development kits, Storage vMotion, the Distributed Resource Scheduler and Fault Tolerance. VMware vSphere is geared toward enterprise data centers; smaller businesses might find it difficult to justify the price.
+
+* __Microsoft Hyper-V__. Microsoft Hyper-V runs on Windows OSes and enables admins to run multiple OSes inside a VM. Admins and developers often use Hyper-V to build test environments to run software on several OSes by creating VMs for each test.
+
+* __KVM__. The KVM hypervisor is an open source virtualization architecture made for Linux distributions. The KVM hypervisor enables admins to convert a Linux kernel into a hypervisor and has direct access to hardware along with any VMs hosted by the hypervisor. Features include live migration, scheduling and resource control.
+
+* __Xen hypervisor__. The open source Xen Project originally began as a research project at the University of Cambridge in 2003. It later moved under the purview of the Linux Foundation. Xen is used as the upstream version for other hypervisors, including Oracle VM and Citrix Hypervisor. Amazon Web Services uses a customized version of the Xen hypervisor as the foundation for its Elastic Compute Cloud.
+
+* __Oracle VM__. Oracle VM is an open source virtualization architecture that uses Xen at its core and enables admins to deploy OSes and application software in VMs. Oracle VM features include creation and configuration of server pools, creation and management of storage repositories, VM cloning, VM migration and load balancing.
+
+* __Citrix Hypervisor__. The Citrix Hypervisor -- previously known as Citrix XenServer -- is an open source server virtualization platform based on the Xen hypervisor. Admins use the Citrix Hypervisor to deploy, host and manage VMs as well as distribute hardware resources to those VMs. Some key features include VM templates, XenMotion and host live patches. The Citrix Hypervisor comes in two versions: Standard and Enterprise.
+
 ## PART 2. WORK WITH VIRTUALBOX
 1. First run VirtualBox and Virtual Machine (VM).
 
