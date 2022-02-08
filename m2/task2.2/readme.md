@@ -42,7 +42,7 @@ __CloudWatch__ ☞ __Alarms__ ☞ __Billing alarms__ ☞ __Create alarm__
 
 10. Launch and configure a WordPress instance with Amazon Lightsail [link](https://aws.amazon.com/ru/getting-started/hands-on/launch-a-wordpress-website/?trk=gs_card)
 
-11. Review the 10-minute Store and Retrieve a File. Repeat, creating your own repository.
+11. Review the 10-minute [Store and Retrieve a File](https://aws.amazon.com/ru/getting-started/hands-on/backup-files-to-amazon-s3/). Repeat, creating your own repository.
 
 12. Review the 10-minute example Batch upload files to the cloud to Amazon S3 using the AWS CLI. Create a user AWS IAM, configure CLI AWS and upload any files to S3.
 
