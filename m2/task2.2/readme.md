@@ -6,6 +6,18 @@
 
 1. Read the terms of Using the AWS Free Tier and the ability to control their own costs.
 
+Types of offers
+
+Explore more than 100 products and start building on AWS using the Free Tier. Three different types of free offers are available depending on the product used. Click icon below to explore our offers.
+
++ __Free Trials__ Short-term free trial offers start from the date you activate a particular service
+
++ __12 months free__ Enjoy these offers for 12-months following your initial sign-up date to AWS
+
++ __Always free__ These free tier offers do not expire and are available to all AWS customers
+
+[Learn more about AWS Free Tier](https://aws.amazon.com/ru/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=tier%2312monthsfree%7Ctier%23always-free&awsf.Free%20Tier%20Categories=*all&awsm.page-all-free-tier=1)
+
 2. Register with AWS (first priority) or alternatively, you can request access to courses in AWS Academy if you are currently a student of certain University.
 
 ![Image alt](img/task_2-2_Item_2_completed.png)
