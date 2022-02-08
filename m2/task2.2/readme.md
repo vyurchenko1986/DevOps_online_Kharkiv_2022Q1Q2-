@@ -6,7 +6,7 @@
 
 1. Read the terms of Using the [AWS Free Tier](https://docs.aws.amazon.com/en_us/awsaccountbilling/latest/aboutv2/billing-free-tier.html) and the ability to control their own costs.
 
-Types of offers
+__Types of offers__
 
 Explore more than 100 products and start building on AWS using the Free Tier. Three different types of free offers are available depending on the product used. Click icon below to explore our offers.
 
@@ -18,9 +18,12 @@ Explore more than 100 products and start building on AWS using the Free Tier. Th
 
 [Learn more about AWS Free Tier](https://aws.amazon.com/ru/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=tier%2312monthsfree%7Ctier%23always-free&awsf.Free%20Tier%20Categories=*all&awsm.page-all-free-tier=1)
 
-Add ability to control their own costs:
+__Add ability to control their own costs__:
++ __USER NAME__ ☞ __Billing Dashboard__  ☞ __Budgets__ ☞   __Create budget__
 
-__CloudWatch__ ☞ __Alarms__ ☞ __Billing alarms__ ☞ __Create alarm__
++ __CloudWatch__ ☞ __Alarms__ ☞ __Billing alarms__ ☞ __Create alarm__
+
+![Image alt](img/task_2-2_Item_1_chrome_xsbevaCVNv.gif)
 
 2. [Register with AWS](https://portal.aws.amazon.com/billing/signup?redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start) (first priority) or alternatively, you can request access to courses in [AWS Academy](https://aws.amazon.com/ru/training/awsacademy/member-list/) if you are currently a student of [certain University](https://aws.amazon.com/ru/training/awsacademy/member-list/).
 
