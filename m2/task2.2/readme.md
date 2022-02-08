@@ -18,6 +18,10 @@ Explore more than 100 products and start building on AWS using the Free Tier. Th
 
 [Learn more about AWS Free Tier](https://aws.amazon.com/ru/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=tier%2312monthsfree%7Ctier%23always-free&awsf.Free%20Tier%20Categories=*all&awsm.page-all-free-tier=1)
 
+Add ability to control their own costs:
+
+__CloudWatch__ ☞ __Alarms__ ☞ __Billing alarms__ ☞ __Create alarm__
+
 2. Register with AWS (first priority) or alternatively, you can request access to courses in AWS Academy if you are currently a student of certain University.
 
 ![Image alt](img/task_2-2_Item_2_completed.png)
