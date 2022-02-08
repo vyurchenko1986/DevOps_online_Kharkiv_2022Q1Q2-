@@ -22,7 +22,7 @@ Add ability to control their own costs:
 
 __CloudWatch__ ☞ __Alarms__ ☞ __Billing alarms__ ☞ __Create alarm__
 
-2. Register with AWS (first priority) or alternatively, you can request access to courses in AWS Academy if you are currently a student of certain University.
+2. [Register with AWS](https://portal.aws.amazon.com/billing/signup?redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start) (first priority) or alternatively, you can request access to courses in AWS Academy if you are currently a student of certain University.
 
 ![Image alt](img/task_2-2_Item_2_completed.png)
 
