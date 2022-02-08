@@ -46,7 +46,8 @@ __CloudWatch__ ☞ __Alarms__ ☞ __Billing alarms__ ☞ __Create alarm__
 
 12. Review the 10-minute [example](https://aws.amazon.com/ru/getting-started/hands-on/backup-to-s3-cli/?nc1=h_ls) Batch upload files to the cloud to Amazon S3 using the AWS CLI. Create a user AWS IAM, configure CLI AWS and upload any files to S3.
 
-13. Review the 10-minute example Deploy Docker Containers on Amazon Elastic Container Service (Amazon ECS). Repeat, create a cluster, and run the online demo application or better other application with custom settings.
+13. Review the 10-minute [example](https://docs.aws.amazon.com/AmazonECS/latest/userguide/docker-basics.html) Deploy Docker Containers on Amazon Elastic Container Service (Amazon ECS). Repeat, create a cluster, and run the online demo application or better other application with custom settings.
+
 14. Run a Serverless "Hello, World!" with AWS Lambda.
 
 15. Create a static website on Amazon S3, publicly available (link1 or link2 - using a custom domain registered with Route 53). Post on the page your own photo, the name of the educational program (EPAM DevOps online Winter 2022), the list of AWS services with which the student worked within the educational program or earlier and the full list with links of completed labs (based on tutorials or qwiklabs). Provide the link to the website in your report and СV.
