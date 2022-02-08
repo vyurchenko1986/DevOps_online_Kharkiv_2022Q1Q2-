@@ -8,6 +8,8 @@
 
 2. Register with AWS (first priority) or alternatively, you can request access to courses in AWS Academy if you are currently a student of certain University.
 
+![Image alt](img/task_2-2_Item_2_completed.png)
+
 3. Find the hands-on tutorials and AWS Well-Architected Labs for your AWS needs. Explore list of step-by-step tutorials for deferent category. Use, repeat as many as you can and have fun))
 
 4. Review Getting Started with Amazon EC2. Log Into Your AWS Account, Launch, Configure, Connect
@@ -21,9 +23,7 @@ and Terminate Your Instance. Do not use Amazon Lightsail. It is recommended to u
 
 8. Detach Disk_D from the 1st instance and attach disk_D to the new instance.
 
-9. Review the 10-minute example. Explore the possibilities of creating your own domain and
-domain name for your site. Note, that Route 53 not free service. Alternatively you can free
-register the domain name *.PP.UA and use it.
+9. Review the 10-minute example. Explore the possibilities of creating your own domain and domain name for your site. Note, that Route 53 not free service. Alternatively you can free register the domain name *.PP.UA and use it.
 
 10. Launch and configure a WordPress instance with Amazon Lightsail link
 
