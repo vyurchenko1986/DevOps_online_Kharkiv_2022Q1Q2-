@@ -19,7 +19,7 @@ Explore more than 100 products and start building on AWS using the Free Tier. Th
 [Learn more about AWS Free Tier](https://aws.amazon.com/ru/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=tier%2312monthsfree%7Ctier%23always-free&awsf.Free%20Tier%20Categories=*all&awsm.page-all-free-tier=1)
 
 __Add ability to control their own costs__:
-+ __USER NAME__ ☞ __Billing Dashboard__  ☞ __Budgets__ ☞   __Create budget__
++ __USER NAME__ ☞ __Billing Dashboard__  ☞ __Billing preferences__ ☞  [✓] __Receive Billing Alerts__
 
 + __CloudWatch__ ☞ __Alarms__ ☞ __Billing alarms__ ☞ __Create alarm__
 
