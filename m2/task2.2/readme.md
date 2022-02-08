@@ -4,7 +4,7 @@
 
 ## TASK 2.2
 
-1. Read the terms of Using the AWS Free Tier and the ability to control their own costs.
+1. Read the terms of Using the [AWS Free Tier](https://docs.aws.amazon.com/en_us/awsaccountbilling/latest/aboutv2/billing-free-tier.html) and the ability to control their own costs.
 
 Types of offers
 
