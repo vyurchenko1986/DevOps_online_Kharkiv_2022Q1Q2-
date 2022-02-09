@@ -44,6 +44,12 @@ __Add ability to control their own costs__:
 
 6. Create and attach a Disk_D (EBS) to your instance to add more storage space. Create and save some file on Disk_D.
 
+![Image alt](img/task_2-2_Item_6_1completed.png)
+![Image alt](img/task_2-2_Item_6_2completed.png)
+![Image alt](img/task_2-2_Item_6_3completed.png)
+![Image alt](img/task_2-2_Item_6_4completed.png)
+![Image alt](img/task_2-2_Item_6_5completed.png)
+
 7. Launch the second instance from backup.
 
 8. Detach Disk_D from the 1st instance and attach disk_D to the new instance.
