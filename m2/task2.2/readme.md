@@ -72,6 +72,25 @@ ls -la /mnt/data/
 
 8. Detach Disk_D from the 1st instance and attach disk_D to the new instance.
 
+![Image alt](img/task_2-2_Item_8_1_completed.png)
+![Image alt](img/task_2-2_Item_8_2_completed.png)
+![Image alt](img/task_2-2_Item_8_3_completed.png)
+![Image alt](img/task_2-2_Item_8_4_completed.png)
+![Image alt](img/task_2-2_Item_8_5_completed.png)
+![Image alt](img/task_2-2_Item_8_6_completed.png)
+![Image alt](img/task_2-2_Item_8_7_completed.png)
+
+I used the following commands to initially connect the disk to the system:
+```
+df -hT
+sudo lsblk
+
+sudo mkdir /mnt/data/
+sudo mount /dev/xvvdf /mnt/data/
+
+ls -la /mnt/data/
+```
+
 9. Review the 10-minute [example](https://aws.amazon.com/ru/getting-started/hands-on/get-a-domain/?nc1=h_ls). Explore the possibilities of creating your own domain and domain name for your site. Note, that Route 53 not free service. Alternatively you can free register the domain name *.PP.UA and use it.
 
 10. Launch and configure a WordPress instance with Amazon Lightsail [link](https://aws.amazon.com/ru/getting-started/hands-on/launch-a-wordpress-website/?trk=gs_card)
