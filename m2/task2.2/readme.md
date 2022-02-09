@@ -33,6 +33,9 @@ __Add ability to control their own costs__:
 
 4. Review [Getting Started with Amazon EC2](https://aws.amazon.com/ru/ec2/getting-started/?nc1=h_ls). Log Into Your AWS Account, Launch, Configure, Connect and Terminate Your Instance. Do not use Amazon Lightsail. It is recommended to use the t2 or t3.micro instance and the CentOS operating system.
 
+![Image alt](img/task_2-2_Item_4_1completed.png)
+![Image alt](img/task_2-2_Item_4_2completed.png)
+
 5. Create a snapshot of your instance to keep as a backup.
 
 6. Create and attach a Disk_D (EBS) to your instance to add more storage space. Create and save some file on Disk_D.
