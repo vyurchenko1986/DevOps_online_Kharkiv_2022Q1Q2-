@@ -142,6 +142,15 @@ aws s3 cp s3://my-f01-backup-bucket01/CV_DevOps(6)_Kh_Valery_Yurchenko.pdf ./
 ![Image alt](img/task_2-2_Item_12_6_completed.png)
 ![Image alt](img/task_2-2_Item_12_7_completed.png)
 
++ To remove the CV_DevOps(6)_Kh_Valery_Yurchenko.pdf file from my-f01-backup-bucket01, use the following command:
+
+```
+aws s3 rm s3://my-f01-backup-bucket01/CV_DevOps(6)_Kh_Valery_Yurchenko.pdf
+```
+
+![Image alt](img/task_2-2_Item_12_8_completed.png)
+![Image alt](img/task_2-2_Item_12_9_completed.png)
+
 13. Review the 10-minute [example](https://docs.aws.amazon.com/AmazonECS/latest/userguide/docker-basics.html) Deploy Docker Containers on Amazon Elastic Container Service (Amazon ECS). Repeat, create a cluster, and run the online demo application or better other application with custom settings.
 
 14. [Run a Serverless "Hello, World!"](https://aws.amazon.com/ru/getting-started/hands-on/run-serverless-code/?nc1=h_ls) with AWS Lambda.
