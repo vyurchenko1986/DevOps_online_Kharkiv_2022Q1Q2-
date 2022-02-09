@@ -95,6 +95,8 @@ ls -la /mnt/data/
 
 10. Launch and configure a WordPress instance with Amazon Lightsail [link](https://aws.amazon.com/ru/getting-started/hands-on/launch-a-wordpress-website/?trk=gs_card)
 
+![Image alt](img/task_2-2_Item_10_1_completed.gif)
+
 11. Review the 10-minute [Store and Retrieve a File](https://aws.amazon.com/ru/getting-started/hands-on/backup-files-to-amazon-s3/). Repeat, creating your own repository.
 
 12. Review the 10-minute [example](https://aws.amazon.com/ru/getting-started/hands-on/backup-to-s3-cli/?nc1=h_ls) Batch upload files to the cloud to Amazon S3 using the AWS CLI. Create a user AWS IAM, configure CLI AWS and upload any files to S3.
