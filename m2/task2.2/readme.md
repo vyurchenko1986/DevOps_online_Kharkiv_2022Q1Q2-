@@ -50,6 +50,19 @@ __Add ability to control their own costs__:
 ![Image alt](img/task_2-2_Item_6_4completed.png)
 ![Image alt](img/task_2-2_Item_6_5completed.png)
 
+I used the following commands to initially connect the disk to the system:
+```
+df -hT
+sudo lsblk
+
+sudo mkfs -t xfs /dev/xvd
+sudo mkdir /mnt/data/
+sudo mount /dev/xvvdf /mnt/data/
+
+sudo touch /mnt/data/Hello_Valery_Yurchenko.txt
+ls -la /mnt/data/
+```
+
 7. Launch the second instance from backup.
 
 8. Detach Disk_D from the 1st instance and attach disk_D to the new instance.
