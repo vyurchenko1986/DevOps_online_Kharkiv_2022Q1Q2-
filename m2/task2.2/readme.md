@@ -106,6 +106,24 @@ ls -la /mnt/data/
 
 ![Image alt](img/task_2-2_Item_12_1_completed.png)
 
+```
+https://s3.amazonaws.com/aws-cli/AWSCLI64.msi
+
+aws configure
+
+AWS Access Key ID [None]: AKIXXXXXXXXXXXXXXXX4
+AWS Secret Access Key [None]: ZMIXXXXXXXXXXXXXXXXXXXXXXXXXXh0/k
+Default region name [None]: us-east-1
+Default output format [None]: json
+```
++ To create a new bucket named my-f01-backup-bucket01, enter the following:
+
+```
+aws s3 mb s3://my-f01-backup-bucket01
+```
+![Image alt](img/task_2-2_Item_12_2_completed.png)
+![Image alt](img/task_2-2_Item_12_3_completed.png)
+
 13. Review the 10-minute [example](https://docs.aws.amazon.com/AmazonECS/latest/userguide/docker-basics.html) Deploy Docker Containers on Amazon Elastic Container Service (Amazon ECS). Repeat, create a cluster, and run the online demo application or better other application with custom settings.
 
 14. [Run a Serverless "Hello, World!"](https://aws.amazon.com/ru/getting-started/hands-on/run-serverless-code/?nc1=h_ls) with AWS Lambda.
