@@ -38,9 +38,9 @@ __Add ability to control their own costs__:
 
 5. Create a snapshot of your instance to keep as a backup.
 
-![Image alt](img/snapshot_1_Screenshot_20220209_123444.png)
-![Image alt](img/snapshot_3_Screenshot_20220209_124211.png)
-![Image alt](img/snapshot_2_Screenshot_20220209_124138.png)
+![Image alt](img/task_2-2_Item_5_1completed.png)
+![Image alt](img/task_2-2_Item_5_2completed.png)
+![Image alt](img/task_2-2_Item_5_3completed.png)
 
 6. Create and attach a Disk_D (EBS) to your instance to add more storage space. Create and save some file on Disk_D.
 
