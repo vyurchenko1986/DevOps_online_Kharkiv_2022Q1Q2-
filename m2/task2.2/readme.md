@@ -121,8 +121,18 @@ Default output format [None]: json
 ```
 aws s3 mb s3://my-f01-backup-bucket01
 ```
+
 ![Image alt](img/task_2-2_Item_12_2_completed.png)
 ![Image alt](img/task_2-2_Item_12_3_completed.png)
+
++ To download my first __CV_DevOps(6)_Kh_Valery_Yurchenko.pdf__ file located in the local directory (__C:\Users\User\Desktop\DevOPS\EPAM__),
+to the S3 bucket __my-f01-backup-bucket01__, you should use the following command:
+
+```
+aws s3 cp "C:\Users\User\Desktop\DevOPS\EPAM\CV_DevOps(6)_Kh_Valery_Yurchenko.pdf" s3://my-f01-backup-bucket01/
+```
+![Image alt](img/task_2-2_Item_12_4_completed.png)
+![Image alt](img/task_2-2_Item_12_5_completed.png)
 
 13. Review the 10-minute [example](https://docs.aws.amazon.com/AmazonECS/latest/userguide/docker-basics.html) Deploy Docker Containers on Amazon Elastic Container Service (Amazon ECS). Repeat, create a cluster, and run the online demo application or better other application with custom settings.
 
