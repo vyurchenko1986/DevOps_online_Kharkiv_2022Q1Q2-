@@ -65,6 +65,11 @@ ls -la /mnt/data/
 
 7. Launch the second instance from backup.
 
+![Image alt](img/task_2-2_Item_7_1_completed.png)
+![Image alt](img/task_2-2_Item_7_2_completed.png)
+![Image alt](img/task_2-2_Item_7_3_completed.png)
+![Image alt](img/task_2-2_Item_7_4_completed.png)
+
 8. Detach Disk_D from the 1st instance and attach disk_D to the new instance.
 
 9. Review the 10-minute [example](https://aws.amazon.com/ru/getting-started/hands-on/get-a-domain/?nc1=h_ls). Explore the possibilities of creating your own domain and domain name for your site. Note, that Route 53 not free service. Alternatively you can free register the domain name *.PP.UA and use it.
