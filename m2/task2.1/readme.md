@@ -5,6 +5,8 @@ TASK 2.1
 ## PART 1. HYPERVISORS
 1. What are the most popular hypervisors for infrastructure virtualization?
 
+![Image alt](img/types_hypervisor.png)
+
 * VMware vSphere / ESXi
 * Microsoft Windows Server 2012 Hyper-V (or the free Hyper-V Server 2012)
 * Xen / Citrix XenServer
