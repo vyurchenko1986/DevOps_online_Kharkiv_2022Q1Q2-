@@ -96,6 +96,7 @@ ls -la /mnt/data/
 10. Launch and configure a WordPress instance with Amazon Lightsail [link](https://aws.amazon.com/ru/getting-started/hands-on/launch-a-wordpress-website/?trk=gs_card)
 
 ![Image alt](img/task_2-2_Item_10_1_completed.gif)
+![Image alt](img/task_2-2_Item_10_2_completed.gif)
 
 11. Review the 10-minute [Store and Retrieve a File](https://aws.amazon.com/ru/getting-started/hands-on/backup-files-to-amazon-s3/). Repeat, creating your own repository.
 
