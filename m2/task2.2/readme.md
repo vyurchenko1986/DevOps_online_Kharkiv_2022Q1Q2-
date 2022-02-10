@@ -153,7 +153,7 @@ aws s3 rm s3://my-f01-backup-bucket01/CV_DevOps(6)_Kh_Valery_Yurchenko.pdf
 
 13. Review the 10-minute [example](https://docs.aws.amazon.com/AmazonECS/latest/userguide/docker-basics.html) Deploy Docker Containers on Amazon Elastic Container Service (Amazon ECS). Repeat, create a cluster, and run the online demo application or better other application with custom settings.
 
-[1] To install Docker on an Amazon EC2 instance:
++ To install Docker on an Amazon EC2 instance:
 
 ```
 sudo yum update -y
@@ -167,7 +167,7 @@ docker info
 
 ![Image alt](img/task_2-2_Item_13_1.png)
 
-[2] Create a Docker image:
++ Create a Docker image:
 
 ```touch Dockerfile```
 
@@ -193,9 +193,29 @@ EXPOSE 80
 CMD /root/run_apache.sh
 ```
 
+```
+# Build the Docker image from your Dockerfile.
+docker build -t hello-world .
+
+# Run docker images to verify that the image was created correctly.
+docker images --filter reference=hello-world
+
+Output:
+
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              e9ffedc8c286        4 minutes ago       241MB
+
+# Run the newly built image.
+docker run -t -i -p 80:80 hello-world
+
+# You should see a web page with your "Hello World!" statement.
+Stop the Docker container by typing Ctrl + c.
+
+```
+
 ![Image alt](img/task_2-2_Item_13_2.png)
 
-[3] Push your image to Amazon Elastic Container Registry:
++ Push your image to Amazon Elastic Container Registry:
 ```
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
@@ -215,7 +235,7 @@ Default output format [None]: json
 
 To tag your image and push it to Amazon ECR:
 
-[4] Create an Amazon ECR repository to store your hello-world image. Note the repositoryUri in the output.
++ Create an Amazon ECR repository to store your hello-world image. Note the repositoryUri in the output.
 
 ```aws ecr create-repository --repository-name hello-repository --region us-east-1```
 
@@ -242,24 +262,24 @@ ___Output___:
 
 ![Image alt](img/task_2-2_Item_13_5.png)
 
-[5] Tag the hello-world image with the repositoryUri value from the previous step.
++ Tag the hello-world image with the repositoryUri value from the previous step.
 
 ```docker tag hello-world 752537098702.dkr.ecr.us-east-1.amazonaws.com/hello-repository```
 
-[6] Run the aws ecr get-login-password command. Specify the registry URI you want to authenticate to. For more information, see Registry Authentication in the Amazon Elastic Container Registry User Guide.
++ Run the aws ecr get-login-password command. Specify the registry URI you want to authenticate to. For more information, see Registry Authentication in the Amazon Elastic Container Registry User Guide.
 
 ```aws ecr get-login-password | docker login --username AWS --password-stdin 752537098702.dkr.ecr.us-east-1.amazonaws.com```
 
 ![Image alt](img/task_2-2_Item_13_6.png)
 
-[7] Push the image to Amazon ECR with the repositoryUri value from the earlier step.
++ Push the image to Amazon ECR with the repositoryUri value from the earlier step.
 
 ```docker push 752537098702.dkr.ecr.us-east-1.amazonaws.com/hello-repository```
 
 ![Image alt](img/task_2-2_Item_13_7.png)
 ![Image alt](img/task_2-2_Item_13_8.png)
 
-[8] __Clean up__ When you are done experimenting with your Amazon ECR image, you can delete the repository so you are not charged for image storage.
++ __Clean up__ When you are done experimenting with your Amazon ECR image, you can delete the repository so you are not charged for image storage.
 
 ```aws ecr delete-repository --repository-name hello-repository --region us-east-1 --force```
 
