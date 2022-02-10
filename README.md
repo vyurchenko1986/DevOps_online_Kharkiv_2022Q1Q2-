@@ -4,4 +4,4 @@
 
 + [Lecture 2. Virtualization [task2.1]](https://github.com/vyurchenko1986/DevOps_online_Kharkiv_2022Q1Q2-/blob/main/m2/task2.1)
 
-+ [Lecture 3. Cloud Basic & Lecture 4. Cloud Basic - 2 [task2.2]](https://github.com/vyurchenko1986/DevOps_online_Kharkiv_2022Q1Q2-/tree/develop/m2/task2.2)
++ [Lecture 3. Cloud Basic & Lecture 4. Cloud Basic - 2 [task2.2]](https://github.com/vyurchenko1986/DevOps_online_Kharkiv_2022Q1Q2-/tree/main/m2/task2.2)
