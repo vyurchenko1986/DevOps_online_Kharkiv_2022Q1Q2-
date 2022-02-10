@@ -153,6 +153,119 @@ aws s3 rm s3://my-f01-backup-bucket01/CV_DevOps(6)_Kh_Valery_Yurchenko.pdf
 
 13. Review the 10-minute [example](https://docs.aws.amazon.com/AmazonECS/latest/userguide/docker-basics.html) Deploy Docker Containers on Amazon Elastic Container Service (Amazon ECS). Repeat, create a cluster, and run the online demo application or better other application with custom settings.
 
+[1] To install Docker on an Amazon EC2 instance:
+
+```
+sudo yum update -y
+sudo amazon-linux-extras install docker -y
+sudo service docker start 
+sudo systemctl enable docker
+sudo usermod -a -G docker ec2-user
+newgrp docker
+docker info
+```
+
+![Image alt](img/task_2-2_Item_13_1.png)
+
+[2] Create a Docker image:
+
+```touch Dockerfile```
+
+```
+FROM ubuntu:18.04
+
+# Install dependencies
+RUN apt-get update && \
+ apt-get -y install apache2
+
+# Install apache and write hello world message
+RUN echo 'Hello World!' > /var/www/html/index.html
+
+# Configure apache
+RUN echo '. /etc/apache2/envvars' > /root/run_apache.sh && \
+ echo 'mkdir -p /var/run/apache2' >> /root/run_apache.sh && \
+ echo 'mkdir -p /var/lock/apache2' >> /root/run_apache.sh && \ 
+ echo '/usr/sbin/apache2 -D FOREGROUND' >> /root/run_apache.sh && \ 
+ chmod 755 /root/run_apache.sh
+
+EXPOSE 80
+
+CMD /root/run_apache.sh
+```
+
+![Image alt](img/task_2-2_Item_13_2.png)
+
+[3] Push your image to Amazon Elastic Container Registry:
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+
+aws --version
+
+aws configure
+AWS Access Key ID [None]: AXXXXXXXXXXXXXXXXXX4
+AWS Secret Access Key [None]: ZXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX0/k
+Default region name [None]: us-east-1
+Default output format [None]: json
+```
+
+![Image alt](img/task_2-2_Item_13_3.png)
+![Image alt](img/task_2-2_Item_13_4.png)
+
+To tag your image and push it to Amazon ECR:
+
+[4] Create an Amazon ECR repository to store your hello-world image. Note the repositoryUri in the output.
+
+```aws ecr create-repository --repository-name hello-repository --region us-east-1```
+
+___Output___:
+
+```
+{
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:us-east-1:752537098702:repository/hello-repository",
+        "registryId": "752537098702",
+        "repositoryName": "hello-repository",
+        "repositoryUri": "752537098702.dkr.ecr.us-east-1.amazonaws.com/hello-repository",
+        "createdAt": "2022-02-10T13:46:30+02:00",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        },
+        "encryptionConfiguration": {
+            "encryptionType": "AES256"
+        }
+    }
+}
+```
+
+![Image alt](img/task_2-2_Item_13_5.png)
+
+[5] Tag the hello-world image with the repositoryUri value from the previous step.
+
+```docker tag hello-world 752537098702.dkr.ecr.us-east-1.amazonaws.com/hello-repository```
+
+[6] Run the aws ecr get-login-password command. Specify the registry URI you want to authenticate to. For more information, see Registry Authentication in the Amazon Elastic Container Registry User Guide.
+
+```aws ecr get-login-password | docker login --username AWS --password-stdin 752537098702.dkr.ecr.us-east-1.amazonaws.com```
+
+![Image alt](img/task_2-2_Item_13_6.png)
+
+[7] Push the image to Amazon ECR with the repositoryUri value from the earlier step.
+
+```docker push 752537098702.dkr.ecr.us-east-1.amazonaws.com/hello-repository```
+
+![Image alt](img/task_2-2_Item_13_7.png)
+![Image alt](img/task_2-2_Item_13_8.png)
+
+[8] __Clean up__ When you are done experimenting with your Amazon ECR image, you can delete the repository so you are not charged for image storage.
+
+```aws ecr delete-repository --repository-name hello-repository --region us-east-1 --force```
+
+![Image alt](img/task_2-2_Item_13_9.png)
+![Image alt](img/task_2-2_Item_13_10.png)
+
 14. [Run a Serverless "Hello, World!"](https://aws.amazon.com/ru/getting-started/hands-on/run-serverless-code/?nc1=h_ls) with AWS Lambda.
 
 15. Create a static website on Amazon S3, publicly available ([link1](https://docs.aws.amazon.com/AmazonS3/latest/dev/HostingWebsiteOnS3Setup.html) or [link2](https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-custom-domain-walkthrough.html) - using a custom domain registered with Route 53). Post on the page your own photo, the name of the educational program (__EPAM DevOps online Winter 2022__), the list of AWS services with which the student worked within the educational program or earlier and the full list with links of completed labs (based on [tutorials](https://aws.amazon.com/ru/getting-started/hands-on/?awsf.getting-started-content-type=content-type%23hands-on&?e=gs2020&p=gsrc&awsf.getting-started-category=*all&awsf.getting-started-level=*all) or[ qwiklabs](https://amazon.qwiklabs.com/)). Provide the link to the website in your report and СV.
