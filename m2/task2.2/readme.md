@@ -290,4 +290,14 @@ ___Output___:
 
 14. [Run a Serverless "Hello, World!"](https://aws.amazon.com/ru/getting-started/hands-on/run-serverless-code/?nc1=h_ls) with AWS Lambda.
 
+![Image alt](img/task_2-2_Item_14_1.png)
+![Image alt](img/task_2-2_Item_14_2.png)
+![Image alt](img/task_2-2_Item_14_3.png)
+![Image alt](img/task_2-2_Item_14_4.png)
+![Image alt](img/task_2-2_Item_14_5.png)
+![Image alt](img/task_2-2_Item_14_6.png)
+![Image alt](img/task_2-2_Item_14_8.png)
+![Image alt](img/task_2-2_Item_14_7.png)
+![Image alt](img/task_2-2_Item_14_9.png)
+
 15. Create a static website on Amazon S3, publicly available ([link1](https://docs.aws.amazon.com/AmazonS3/latest/dev/HostingWebsiteOnS3Setup.html) or [link2](https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-custom-domain-walkthrough.html) - using a custom domain registered with Route 53). Post on the page your own photo, the name of the educational program (__EPAM DevOps online Winter 2022__), the list of AWS services with which the student worked within the educational program or earlier and the full list with links of completed labs (based on [tutorials](https://aws.amazon.com/ru/getting-started/hands-on/?awsf.getting-started-content-type=content-type%23hands-on&?e=gs2020&p=gsrc&awsf.getting-started-category=*all&awsf.getting-started-level=*all) or[ qwiklabs](https://amazon.qwiklabs.com/)). Provide the link to the website in your report and СV.
