@@ -156,6 +156,8 @@ aws s3 rm s3://my-f01-backup-bucket01/CV_DevOps(6)_Kh_Valery_Yurchenko.pdf
 + To install Docker on an Amazon EC2 instance:
 
 ```
+# Or add to ec2 User data and shell scripts:
+
 sudo yum update -y
 sudo amazon-linux-extras install docker -y
 sudo service docker start 
