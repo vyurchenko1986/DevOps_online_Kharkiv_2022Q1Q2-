@@ -308,6 +308,27 @@ ___Output___:
 
 ![Image alt](img/task_2-2_Item_15_1.gif)
 
+Granting [read-only permission to an anonymous user](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html):
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicRead",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject",
+                "s3:GetObjectVersion"
+            ],
+            "Resource": [
+                "arn:aws:s3:::vyurchenko.pp.ua/*"
+            ]
+        }
+    ]
+}
+```
 
 + [http://vyurchenko.pp.ua/](http://vyurchenko.pp.ua/)
 + [http://vyurchenko.pp.ua.s3-website-us-east-1.amazonaws.com/](http://vyurchenko.pp.ua.s3-website-us-east-1.amazonaws.com/)
