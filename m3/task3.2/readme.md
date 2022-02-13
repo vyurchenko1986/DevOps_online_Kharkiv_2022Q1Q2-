@@ -96,3 +96,5 @@ Router(config-subif)# ip address 11.27.86.129 255.255.255.192
 16. Перевірити працездатність за допомогою команди ping з одного сервера на інший.
 
 ![Image alt](img/task_3-2_Item_16.png)
+
+![Image alt](img/task_3-2_Item_16_ip_tab.png)
