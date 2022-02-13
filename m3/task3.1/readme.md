@@ -1,5 +1,4 @@
-# EPAM University Programs DevOps external course
-# Module –Networking Fundamentals
+##### EPAM University Programs DevOps external course. Module –Networking Fundamentals
 
 # Task 3.1 - Створення мереж Home Office, Enterprise, Data Center.
 
