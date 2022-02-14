@@ -1,6 +1,6 @@
 ##### EPAM University Programs DevOps external course. Module –Networking Fundamentals
 
-# Task 3.2 - Створення мереж Home Office, Enterprise, Data Center.
+# Task 3.2 - Task 3.2 - З’єднання окремих мереж за допомогою мережі Internet та налаштування VLAN.
 
 1. З’єднати створені у попередньому Taskу мережі між собою, як показано на рис. 1. Для побудови мережі Internet використати маршрутизатори PT-Empty, попередньо вставивши в них 5 модулів 1CGE, як показано на рис. 2. Switch мережі Enterprise підключити до інтерфейсу GigabitEthernet0/0 (GE0/0) Router ISP1, Switch мережі Data Center підключити до інтерфейсу GigabitEthernet0/0 (GE0/0) Router ISP3, WAN порт Home Router мережі Home Office підключити до інтерфейсу GigabitEthernet0/0 (GE0/0), як показано на рис.1. Маршрутизатори з’єднати між собою через інтерфейси, як показано на рис. 1.
 
