@@ -319,6 +319,10 @@ Lets count the number of lines starting at ```ls``` in the bash_history file. We
 
 10) Using the find command, find all files in the /etc directory containing the host character sequence.
 
+``` sudo find /etc/ -iname "*host*"```
+
+![Image alt](img/module_4_task_4-1_part2_10-1.png)
+
 11) List all objects in /etc that contain the ss character sequence. How can I duplicate a similar command using a bunch of grep?
 
 12) Organize a screen-by-screen print of the contents of the /etc directory. Hint: You must use stream redirection operations.
