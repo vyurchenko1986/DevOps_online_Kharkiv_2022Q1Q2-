@@ -66,7 +66,7 @@ One of to the reasons why ```less``` was introduced was to allow backward moveme
 
 7) * Describe in plans that you are working on laboratory work 1. Tip: You should read the documentation for the finger command.
 
-### What is finger? ###
+What is finger?
 finger command is used to lookup information about an user.
 
 ![Image alt](img/module_4_task_4-1_part1_7-1.png)
@@ -77,7 +77,7 @@ finger command will display login, username, home directory, shell information a
 ```finger owner``` - View login details and Idle status about an user
 You can use finger -s option to view the login detail for a particular user.
 
-### Syntax and Options: ###
+Syntax and Options:
 
 ```-s``` Display the user’s login name, real name, terminal name and write status idle time, login time, and either
 office location and office phone number, or the remote host.
