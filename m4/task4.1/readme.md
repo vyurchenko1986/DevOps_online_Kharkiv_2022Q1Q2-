@@ -329,6 +329,8 @@ Lets count the number of lines starting at ```ls``` in the bash_history file. We
 
 12) Organize a screen-by-screen print of the contents of the /etc directory. Hint: You must use stream redirection operations.
 
+```ls /etc/ | more```
+
 ![Image alt](img/module_4_task_4-1_part2_12-1.png)
 
 13) What are the types of devices and how to determine the type of device? Give examples.
