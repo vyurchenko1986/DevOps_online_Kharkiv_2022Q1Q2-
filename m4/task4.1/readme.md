@@ -32,6 +32,16 @@
 
 5) Become familiar with the Linux help system and the man and info commands. Get help on the previously discussed commands, define and describe any two keys for these commands. Give examples.
 
+```w```, ```w --help```
+
+We can use  ```w -hsf``` to display the result of w command without the header and in short format:
+
+![Image alt](img/module_4_task_4-1_part1_5-1.png)
+
+```man w | less```
+
+![Image alt](img/module_4_task_4-1_part1_5-2.gif)
+
 6) Explore the more and less commands using the help system. View the contents of files .bash* using commands.
 
 7) * Describe in plans that you are working on laboratory work 1. Tip: You should read the documentation for the finger command.
