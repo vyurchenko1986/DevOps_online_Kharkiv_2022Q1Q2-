@@ -10,6 +10,8 @@
 
 2) Use the passwd command to change the password. Examine the basic parameters of the command. What system file does it change *?
 
+```/etc/passwd```
+
 3) Determine the users registered in the system, as well as what commands they execute. What additional information can be gleaned from the command execution?
 
 4) Change personal information about yourself.
