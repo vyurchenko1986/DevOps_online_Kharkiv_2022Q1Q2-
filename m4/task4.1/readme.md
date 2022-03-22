@@ -305,7 +305,7 @@ sudo updatedb
 
 8) Determine which partitions are mounted in the system, as well as the types of these partitions.
 
-```sudo df -ahT``` 
+The ```df -aTh``` command provides us with the information (including the types) of all the mounted partitions.
 
 ![Image alt](img/module_4_task_4-1_part2_8-1.png)
 
