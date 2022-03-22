@@ -8,7 +8,11 @@
 
 ![Image alt](img/m4_t1_p1_img1.png)
 
+```su -```
+
 2) Use the passwd command to change the password. Examine the basic parameters of the command. What system file does it change *?
+
+![Image alt](img/module_4_task_4-1_part1-2-1.png)
 
 ```/etc/passwd```
 
