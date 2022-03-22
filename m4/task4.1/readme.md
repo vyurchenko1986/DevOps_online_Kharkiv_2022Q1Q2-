@@ -225,6 +225,8 @@ sudo file /etc/passwd
 3) Master the skills of navigating the file system using 
 relative and absolute paths. How can you go back to your home directory from anywhere in the filesystem?
 
+![Image alt](img/module_4_task_4-1_part2_3-1.png)
+
 4) Become familiar with the various options for the ls command. Give examples of listing directories using different keys. Explain the information displayed on the terminal using the -l and -a switches.
 
 5) Perform the following sequence of operations:
