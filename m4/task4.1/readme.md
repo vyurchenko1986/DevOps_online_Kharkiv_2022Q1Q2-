@@ -214,6 +214,14 @@ Tree display options:
 
 2) What command can be used to determine the type of file (for example, text or binary)? Give an example.
 
+```
+sudo file /bin/tar
+
+sudo file /etc/passwd
+```
+
+![Image alt](img/module_4_task_4-1_part2_2-1.png)
+
 3) Master the skills of navigating the file system using 
 relative and absolute paths. How can you go back to your home directory from anywhere in the filesystem?
 
