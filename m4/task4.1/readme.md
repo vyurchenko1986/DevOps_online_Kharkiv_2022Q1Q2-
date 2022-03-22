@@ -120,6 +120,14 @@ Useful options for the ```ls```:
 
 1) Examine the tree command. Master the technique of applying a template, for example, display all files that contain a character c, or files that contain a specific sequence of characters. List subdirectories of the root directory up to and including the second nesting level.
 
+```
+sudo tree -f -P 'ho*ts' --prune /
+
+sudo tree -L 2 / | less
+```
+
+![Image alt](img/module_4_task_4-1_part2_1-1.gif)
+
 2) What command can be used to determine the type of file (for example, text or binary)? Give an example.
 
 3) Master the skills of navigating the file system using 
