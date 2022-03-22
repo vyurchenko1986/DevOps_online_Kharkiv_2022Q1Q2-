@@ -325,6 +325,8 @@ Lets count the number of lines starting at ```ls``` in the bash_history file. We
 
 11) List all objects in /etc that contain the ss character sequence. How can I duplicate a similar command using a bunch of grep?
 
+![Image alt](img/module_4_task_4-1_part2_11-1.png)
+
 12) Organize a screen-by-screen print of the contents of the /etc directory. Hint: You must use stream redirection operations.
 
 13) What are the types of devices and how to determine the type of device? Give examples.
