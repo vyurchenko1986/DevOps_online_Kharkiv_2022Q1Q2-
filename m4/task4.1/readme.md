@@ -120,6 +120,8 @@ Useful options for the ```ls```:
 
 1) Examine the tree command. Master the technique of applying a template, for example, display all files that contain a character c, or files that contain a specific sequence of characters. List subdirectories of the root directory up to and including the second nesting level.
 
+Tree is a tiny program used to recursively list the content of a directory in a tree-like format:
+
 ```
 sudo tree -f -P 'ho*ts' --prune /
 
