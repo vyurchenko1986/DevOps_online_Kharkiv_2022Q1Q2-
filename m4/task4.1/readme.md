@@ -231,6 +231,8 @@ We can use ```cd ~```, ```cd $HOME``` command to go back to your home directory 
 
 4) Become familiar with the various options for the ls command. Give examples of listing directories using different keys. Explain the information displayed on the terminal using the -l and -a switches.
 
+![Image alt](img/module_4_task_4-1_part2_4-1.png)
+
 5) Perform the following sequence of operations:
 - create a subdirectory in the home directory;
 - in this subdirectory create a file containing information about directories located in the root directory (using I/O redirection operations);
