@@ -233,6 +233,20 @@ We can use ```cd ~```, ```cd $HOME``` command to go back to your home directory 
 
 ![Image alt](img/module_4_task_4-1_part2_4-1.png)
 
+```-l``` displays detailed information about the files.
+```-a``` shows hidden files.
+The ```ls -l``` (```ls -la```) command displays the following information:
+
+```
+file permissions (-rwxrw-r--),
+number of (hard) links (1),
+owner name (owner),
+owner group (owner),
+file size in bytes (2048),
+time of last modification (Mar 22 09:42),
+file/directory name.
+```
+
 5) Perform the following sequence of operations:
 - create a subdirectory in the home directory;
 - in this subdirectory create a file containing information about directories located in the root directory (using I/O redirection operations);
