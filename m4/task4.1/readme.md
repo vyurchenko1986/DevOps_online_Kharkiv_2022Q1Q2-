@@ -64,9 +64,9 @@ One of to the reasons why ```less``` was introduced was to allow backward moveme
 
 ![Image alt](img/module_4_task_4-1_part1_6-2.gif)
 
-7) * Describe in plans that you are working on laboratory work 1. Tip: You should read the documentation for the finger command.
+7) ```*``` Describe in plans that you are working on laboratory work 1. Tip: You should read the documentation for the finger command.
 
-8) * List the contents of the home directory using the ls command, define its files and directories. Hint: Use the help system to familiarize yourself with the ls command.
+8) ```*``` List the contents of the home directory using the ls command, define its files and directories. Hint: Use the help system to familiarize yourself with the ls command.
 
 ![Image alt](img/module_4_task_4-1_part1_8-1.png)
 
