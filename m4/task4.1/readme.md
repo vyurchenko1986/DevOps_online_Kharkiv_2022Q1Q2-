@@ -225,7 +225,7 @@ sudo file /etc/passwd
 3) Master the skills of navigating the file system using 
 relative and absolute paths. How can you go back to your home directory from anywhere in the filesystem?
 
-We can use ```cd ~``` command to go back to your home directory from anywhere:
+We can use ```cd ~```, ```cd $HOME``` command to go back to your home directory from anywhere:
 
 ![Image alt](img/module_4_task_4-1_part2_3-1.png)
 
