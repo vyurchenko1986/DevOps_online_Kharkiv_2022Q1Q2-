@@ -128,6 +128,88 @@ sudo tree -L 2 / | less
 
 ![Image alt](img/module_4_task_4-1_part2_1-1.gif)
 
+The tree command has many options. Here are those that are responsible for displaying the folder tree:
+
+```
+-a - output all files without exception.
+
+-d - just a list of directories.
+
+-l - follow symbolic links that lead to folders.
+
+-f - the contents of the folders will be shown with path prefixes.
+
+-x - considers only the current file system.
+
+-L - sets the nesting level to display in the output.
+
+-R - recursively go through the directories of all levels.
+
+-P - display files whose name matches the pattern.
+
+-I - exclusion from the output of files whose name matches the pattern.
+
+-o - print the output to a file with the given name.
+--noreport Prevents the command from reporting the number of folders and files at the end of the tree.
+
+--charset - sets encodings for displaying graphic and html files.
+
+--filelimit - folders that contain more files than specified will not be shown.
+```
+
+And these options are used to control the display of document titles:
+
+```
+-q - replaces non-printable characters in filenames with ?.
+
+-N Displays non-printable characters in filenames as is.
+
+-Q encloses filenames in double quotes.
+
+-p - for each file, specifies its name and a list of allowed actions.
+
+-u Prints the name or ID of the account under which the file was created.
+
+-g Prints the name or ID of the user group that has permissions to access the file.
+
+-s - next to the file name displays its size in bytes.
+
+-h - displays the file size in a form that is easier for human perception, adding a letter abbreviation to the number.
+
+-D prints the date the file was last modified (or the last status change in combination with the -c option).
+
+-F - adds / for folders, = for socket files, * for executable files, > for door files, | for special FIFO files.
+
+--inodes Displays the inode numbers for files and folders.
+
+--device Specifies the device number to which the file or folder belongs.
+```
+
+Options for sorting results:
+
+```
+-v - sorts output by nesting levels.
+
+-t Sorts the output by the date the files and folders were last modified.
+
+-c - sorts the output by the date the status was last changed.
+
+-U will output the results in the order in which the folders are located on the disk.
+
+-r sorts output in reverse order.
+--dirsfirst - folders will be shown first, then files.
+```
+
+Tree display options:
+
+```
+-i - removes lines ("branches" of the tree), files and folders are displayed as a list.
+
+-n - makes the tree one-color.
+
+-C - Returns a multi-colored display to the tree after using the -n option.
+```
+
 2) What command can be used to determine the type of file (for example, text or binary)? Give an example.
 
 3) Master the skills of navigating the file system using 
