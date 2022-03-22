@@ -66,6 +66,33 @@ One of to the reasons why ```less``` was introduced was to allow backward moveme
 
 7) ```*``` Describe in plans that you are working on laboratory work 1. Tip: You should read the documentation for the finger command.
 
+### What is finger? ###
+finger command is used to lookup information about an user.
+
+![Image alt](img/module_4_task_4-1_part1_7-1.png)
+
+```finger``` - View detail about a particular user 
+finger command will display login, username, home directory, shell information about a particular user as shown below.
+
+```finger owner``` - View login details and Idle status about an user
+You can use finger -s option to view the login detail for a particular user.
+
+### Syntax and Options: ###
+
+```-s``` Display the user’s login name, real name, terminal name and write status idle time, login time, and either
+office location and office phone number, or the remote host.
+
+```-p``` Prevent the ```-l``` option of finger from displaying the contents of the .forward, .plan, .project and .pubkey
+files.
+
+```-m``` Prevent matching of user names. User is usually a login name; however, matching will also be done on the users’
+real names, unless the -m option is supplied.Display the user’s login name, real name, terminal name and write
+
+status idle time, login time, and either office location and office phone number, or the remote host.
+
+```-o``` When used in conjunction with the -s option, the office location and office phone information is displayed
+instead of the name of the remote host.
+
 8) ```*``` List the contents of the home directory using the ls command, define its files and directories. Hint: Use the help system to familiarize yourself with the ls command.
 
 ![Image alt](img/module_4_task_4-1_part1_8-1.png)
