@@ -305,6 +305,8 @@ sudo updatedb
 
 8) Determine which partitions are mounted in the system, as well as the types of these partitions.
 
+![Image alt](img/module_4_task_4-1_part2_8-1.png)
+
 9) Count the number of lines containing a given sequence of characters in a given file.
 
 10) Using the find command, find all files in the /etc directory containing the host character sequence.
