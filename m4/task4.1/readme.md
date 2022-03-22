@@ -6,6 +6,8 @@
 
 1) Log in to the system as root (or sudo-er).
 
+![Image alt](img/task3-4_1.png)
+
 2) Use the passwd command to change the password. Examine the basic parameters of the command. What system file does it change *?
 
 3) Determine the users registered in the system, as well as what commands they execute. What additional information can be gleaned from the command execution?
