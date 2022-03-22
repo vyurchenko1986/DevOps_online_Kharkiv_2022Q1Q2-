@@ -286,6 +286,8 @@ We can see that the labwork2 file also was modified. It happened because we had 
 - rename the soft link file to symb_lnk_labwork2 file;
 - then delete the labwork2. What changes have occurred and why?
 
+![Image alt](img/module_4_task_4-1_part2_6-3.png)
+
 7) Using the locate utility, find all files that contain the squid and traceroute sequence.
 
 8) Determine which partitions are mounted in the system, as well as the types of these partitions.
