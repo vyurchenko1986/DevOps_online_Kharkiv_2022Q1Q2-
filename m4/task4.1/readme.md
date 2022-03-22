@@ -26,6 +26,10 @@
 
 4) Change personal information about yourself.
 
+```sudo chfn owner```, ```sudo finger -lmps owner```
+
+![Image alt](img/module_4_task_4-1_part1_4-1.png)
+
 5) Become familiar with the Linux help system and the man and info commands. Get help on the previously discussed commands, define and describe any two keys for these commands. Give examples.
 
 6) Explore the more and less commands using the help system. View the contents of files .bash* using commands.
