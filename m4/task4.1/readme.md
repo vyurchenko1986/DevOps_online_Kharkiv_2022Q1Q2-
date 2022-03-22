@@ -97,6 +97,25 @@ instead of the name of the remote host.
 
 ![Image alt](img/module_4_task_4-1_part1_8-1.png)
 
+Useful options for the ```ls```:
+
+• ```ls -a``` - List all files, including hidden files beginning with a period.
+
+• ```ls -ld *``` - List details about a directory and not its contents.
+
+• ```ls -F``` - Put an indicator character at the end of each name.
+
+• ```ls -l``` - Simple long listing.
+
+• ```ls -lR``` - Recursive long listing.
+
+• ```ls -lh``` - Give human readable file sizes.
+
+• ```ls -lS``` - Sort files by file size.
+
+• ```ls -lt``` - Sort files by modification time (very useful!).
+
+
 # Task1.Part2
 
 1) Examine the tree command. Master the technique of applying a template, for example, display all files that contain a character c, or files that contain a specific sequence of characters. List subdirectories of the root directory up to and including the second nesting level.
