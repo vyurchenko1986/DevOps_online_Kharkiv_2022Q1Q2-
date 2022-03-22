@@ -6,7 +6,7 @@
 
 1) Log in to the system as root (or sudo-er).
 
-![Image alt](img/task3-4_1.png)
+![Image alt](img/m4_t1_p1_img1.png)
 
 2) Use the passwd command to change the password. Examine the basic parameters of the command. What system file does it change *?
 
