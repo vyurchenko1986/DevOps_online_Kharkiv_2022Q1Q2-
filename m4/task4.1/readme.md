@@ -68,6 +68,8 @@ One of to the reasons why ```less``` was introduced was to allow backward moveme
 
 8) * List the contents of the home directory using the ls command, define its files and directories. Hint: Use the help system to familiarize yourself with the ls command.
 
+![Image alt](img/module_4_task_4-1_part1_8-1.png)
+
 # Task1.Part2
 
 1) Examine the tree command. Master the technique of applying a template, for example, display all files that contain a character c, or files that contain a specific sequence of characters. List subdirectories of the root directory up to and including the second nesting level.
