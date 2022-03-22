@@ -263,6 +263,9 @@ file/directory name.
 - create a subdirectory test in the home directory;
 - copy the .bash_history file to this directory while changing its name to labwork2;
 - create a hard and soft link to the labwork2 file in the test subdirectory;
+
+![Image alt](img/module_4_task_4-1_part2_6-1.png)
+
 - how to define soft and hard link, what do these concepts;
 - change the data by opening a symbolic link. What changes will happen and why
 - rename the hard link file to hard_lnk_labwork2;
