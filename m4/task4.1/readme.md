@@ -311,6 +311,12 @@ The ```df -aTh``` command provides us with the information (including the types)
 
 9) Count the number of lines containing a given sequence of characters in a given file.
 
+Lets count the number of lines starting at ```ls``` in the bash_history file. We can use ```-c``` option.
+
+```cat .bash_history | grep -c ^ls```
+
+![Image alt](img/module_4_task_4-1_part2_9-1.png)
+
 10) Using the find command, find all files in the /etc directory containing the host character sequence.
 
 11) List all objects in /etc that contain the ss character sequence. How can I duplicate a similar command using a bunch of grep?
