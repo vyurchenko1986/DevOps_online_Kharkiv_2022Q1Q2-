@@ -234,7 +234,9 @@ We can use ```cd ~```, ```cd $HOME``` command to go back to your home directory 
 ![Image alt](img/module_4_task_4-1_part2_4-1.png)
 
 ```-l``` displays detailed information about the files.
+
 ```-a``` shows hidden files.
+
 The ```ls -l``` (```ls -la```) command displays the following information:
 
 ```
