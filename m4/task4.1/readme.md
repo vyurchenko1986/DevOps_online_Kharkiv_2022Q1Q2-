@@ -42,7 +42,11 @@ We can use  ```w -hsf``` to display the result of w command without the header a
 
 ![Image alt](img/module_4_task_4-1_part1_5-2.gif)
 
-6) Explore the more and less commands using the help system. View the contents of files .bash* using commands.
+6) Explore the ```more``` and ```less``` commands using the help system. View the contents of files .bash* using commands.
+
+![Image alt](img/module_4_task_4-1_part1_6-1.gif)
+
+![Image alt](img/module_4_task_4-1_part1_6-2.gif)
 
 7) * Describe in plans that you are working on laboratory work 1. Tip: You should read the documentation for the finger command.
 
