@@ -26,7 +26,7 @@
 
 4) Change personal information about yourself.
 
-```sudo chfn owner```, ```sudo chsh owner```, ```sudo finger -lmps owner```
+```sudo chfn owner```, ```sudo chsh owner```, ```sudo usermod -c "Valery Yurchenko" owner```, ```sudo finger -lmps owner```
 
 ![Image alt](img/module_4_task_4-1_part1_4-1.png)
 
