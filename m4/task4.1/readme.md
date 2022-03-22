@@ -290,6 +290,8 @@ We can see that the labwork2 file also was modified. It happened because we had 
 
 ![Image alt](img/module_4_task_4-1_part2_6-4.png)
 
+We still can access the file through the hard link. But the file isn't available through the soft link.
+
 7) Using the locate utility, find all files that contain the squid and traceroute sequence.
 
 8) Determine which partitions are mounted in the system, as well as the types of these partitions.
