@@ -18,6 +18,12 @@
 
 3) Determine the users registered in the system, as well as what commands they execute. What additional information can be gleaned from the command execution?
 
+```who```, ```w```, ```last -a```, ```lastlog```
+
+![Image alt](img/module_4_task_4-1_part1_3-1.png)
+
+![Image alt](img/module_4_task_4-1_part1_3-2.png)
+
 4) Change personal information about yourself.
 
 5) Become familiar with the Linux help system and the man and info commands. Get help on the previously discussed commands, define and describe any two keys for these commands. Give examples.
