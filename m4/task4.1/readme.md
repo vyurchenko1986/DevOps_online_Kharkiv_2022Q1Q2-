@@ -257,6 +257,8 @@ file/directory name.
 - delete the previously created subdirectory with the file requesting removal;
 - delete the file copied to the home directory.
 
+![Image alt](img/module_4_task_4-1_part2_5-1.png)
+
 6) Perform the following sequence of operations:
 - create a subdirectory test in the home directory;
 - copy the .bash_history file to this directory while changing its name to labwork2;
