@@ -294,6 +294,15 @@ We still can access the file through the hard link. But the file isn't available
 
 7) Using the locate utility, find all files that contain the squid and traceroute sequence.
 
+```
+sudo apt update 
+sudo apt install mlocate
+
+sudo updatedb
+```
+
+![Image alt](img/module_4_task_4-1_part2_7-1.png)
+
 8) Determine which partitions are mounted in the system, as well as the types of these partitions.
 
 9) Count the number of lines containing a given sequence of characters in a given file.
