@@ -160,7 +160,7 @@ Let’s create a new directory and set a sticky bit on it:
 
 ![Image alt](img/module_4_task_4-2_part1_16-2.png)
 
-And now Pedro will try to create some file in this folder, and then remove the folder.
+And now ```vyurchenko``` will try to create some file in this folder, and then remove the folder.
 
 ![Image alt](img/module_4_task_4-2_part1_16-3.png)
 
