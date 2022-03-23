@@ -79,6 +79,12 @@ When creating a new user, this option is only valid if the -m (or --create-home)
 
 9) What commands and keys should be used to lock and unlock a user account?
 
+To lock a users account we can use the command ```usermod -L``` or ```passwd -l```. ```usermod --lock``` user or # ```passwd --lock user```
+
+```usermod --lock [user]```, ```usermod --unlock [user]```, ``` passwd --status [user]```
+
+![Image alt](img/module_4_task_4-2_part1_9-1.png)
+
 10) How to remove a user's password and provide him with a password-free login for subsequent password change?
 
 11) Display the extended format of information about the directory, tell about the information columns displayed on the terminal.
