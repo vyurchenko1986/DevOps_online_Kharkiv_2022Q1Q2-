@@ -104,11 +104,11 @@ To lock a users account we can use the command ```usermod -L``` or ```passwd -l`
 + The sixth column shows the date of the last change.
 + The last column shows the name of the file.
 
-*inode is a file system object containing information about the owner / group that owns a file or directory, access rights, its size, file type, timestamps reflecting the inode modification time (ctime, changing time), content modification time file (mtime, modification time) and the time of the last access to the file (atime, access time) and a counter for counting the number of hard links to the file.
+* inode is a file system object containing information about the owner / group that owns a file or directory, access rights, its size, file type, timestamps reflecting the inode modification time (ctime, changing time), content modification time file (mtime, modification time) and the time of the last access to the file (atime, access time) and a counter for counting the number of hard links to the file.
 
-12) What access rights exist and for whom (i. e., describe the main roles)? Briefly describe the acronym for access rights.
+12-13) What access rights exist and for whom (i. e., describe the main roles)? Briefly describe the acronym for access rights. What is the sequence of defining the relationship between the file and the user?
 
-13) What is the sequence of defining the relationship between the file and the user?
+Access rights can be represented by 9 characters (like "rwxrwxrwx"). Each character can contain “r" for read, "w" for write and "x" for execute, or "-" for no access. The first three characters are the rights for the user, second three - for the group, and the third three - for others.
 
 14) What commands are used to change the owner of a file (directory), as well as the mode of access to the file? Give examples, demonstrate on the terminal.
 
