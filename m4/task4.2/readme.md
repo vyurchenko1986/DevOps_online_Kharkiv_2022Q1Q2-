@@ -63,6 +63,10 @@ We can add a new user by the following command: ```useradd [-c uid comment] [-d 
 
 6) How do I change the name (account name) of an existing user?
 
+```usermod -l [new_username] [username]```, ```sudo usermod -l vyurchenko student```
+
+![Image alt](img/module_4_task_4-2_part1_6-1.png)
+
 7) What is skell_dir? What is its structure?
 
 8) How to remove a user from the system (including his mailbox)?
