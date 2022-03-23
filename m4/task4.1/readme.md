@@ -379,3 +379,7 @@ find / -type s
 ```
 
 15) ** List the first 5 directory files that were recently accessed in the /etc directory.
+
+```sudo ls -u /etc/ | head -5```
+
+![Image alt](img/module_4_task_4-1_part2_15-1.png)
