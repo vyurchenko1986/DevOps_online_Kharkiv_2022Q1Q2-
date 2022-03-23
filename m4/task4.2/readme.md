@@ -6,7 +6,7 @@
 
 Task assignment.
 
-1) Analyze the structure of the /etc/passwd and /etc/group file, what fields are present in it, what users exist on the system?Specify several pseudo-users, how to define them?
+1) Analyze the structure of the /etc/passwd and /etc/group file, what fields are present in it, what users exist on the system? Specify several pseudo-users, how to define them?
 
 2) What are the uid ranges? What is UID? How to define it?
 
