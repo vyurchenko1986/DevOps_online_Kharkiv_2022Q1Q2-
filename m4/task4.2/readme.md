@@ -120,6 +120,34 @@ We can use ```chown``` to change ownership and ```chmod``` to change rights.
 
 15) What is an example of octal representation of access rights? Describe the umask command.
 
+This notation consists of at least three digits. Each of these digits is the sum of its component bits in the binary numeral system. As a result, specific bits add to the sum as it is represented by a numeral:
+
++ The read bit adds 4 to its total (in binary 100),
+
++ The write bit adds 2 to its total (in binary 010), and
+
++ The execute bit adds 1 to its total (in binary 001). Each sum is an octal representation of a bit field – each bit references a separate permission, and grouping 3 bits at a time in octal corresponds to grouping these permissions by user, group, and others.
+
+For example, 755 means:
+
++ Owner: rwx = 4+2+1 = 7
+
++ Group: r-x = 4+0+1 = 5
+
++ Other: r-x = 4+0+1 = 5 777 means: rwx for the owner, rwx for the group and rwx for the others.
+
+The umask value contains the permission bits that will NOT be set on the newly created files and directories. The default creation permissions for files are 666 and for directories 777. To calculate the permission bits of the new files, we should subtract the umask value from the default value.
+
+Let’s calculate how umask 022 will affect newly created files and directories:
+
++ Files: 666 - 022 = 644. The owner can read and modify the files. Group and others can only read the files.
+
++ Directories: 777 - 022 = 755.The owner has full access. Group and others can read and execute the files.
+
+Let’s see how umask works:
+
+![Image alt](img/module_4_task_4-2_part1_15-1.png)
+
 16) Give definitions of sticky bits and mechanism of identifier substitution. Give an example of files and directories with these attributes.
 
 17) What file attributes should be present in the command script?
