@@ -31,7 +31,7 @@ These two files contain information about both real and pseudo-users. The most c
 2-3) What are the uid ranges? What is UID? How to define it?
 What is GID? How to define it?
 
-```id -u```, ```cat /etc/passwd | grep owner```
+```id -u```, ```id -g```, ```cat /etc/passwd | grep owner```
 
 ![Image alt](img/module_4_task_4-2_part1_2-1.png)
 
