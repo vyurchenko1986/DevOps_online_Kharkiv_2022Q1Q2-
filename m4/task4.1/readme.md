@@ -335,6 +335,23 @@ Lets count the number of lines starting at ```ls``` in the bash_history file. We
 
 13) What are the types of devices and how to determine the type of device? Give examples.
 
+![Image alt](img/module_4_task_4-1_part2_13-1.png)
+
+The first bit on each line of ls command denotes the type of file.
+
+**Device files are denoted as the following:
+
+```c - character device``` ```b - block device``` ```p - pipe device``` ```s - socket device```
+
+__Character Device__ - transfers data, but one a character at a time. These devices aren't really physically connected to the machine, but they allow the operating system greater functionality.
+
+__Block Device__ - transfers data, but in large fixed-sized blocks; harddrives, filesystems, etc.
+
+__Pipe Device__ - allows two or more processes to communicate with each other, these are similar to character devices, but instead of having output sent to a device, it's sent to another process.
+
+__Socket Device__ - facilitates communication between processes, similar to pipe devices but they can communicate with many processes at once.
+
+
 14) How to determine the type of file in the system, what types of files are there?
 
 15) * List the first 5 directory files that were recently accessed in the /etc directory.
