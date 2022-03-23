@@ -93,6 +93,19 @@ To lock a users account we can use the command ```usermod -L``` or ```passwd -l`
 
 11) Display the extended format of information about the directory, tell about the information columns displayed on the terminal.
 
+![Image alt](img/module_4_task_4-2_part1_11-1.png)
+
++ First column - Access rights
++ The second column - the permissions.
++ The second column shows the number of hard-links for the inode*.
++ The third column shows the user.
++ The fourth column shows the group.
++ The fifth column shows the size of the file.
++ The sixth column shows the date of the last change.
++ The last column shows the name of the file.
+
+*inode is a file system object containing information about the owner / group that owns a file or directory, access rights, its size, file type, timestamps reflecting the inode modification time (ctime, changing time), content modification time file (mtime, modification time) and the time of the last access to the file (atime, access time) and a counter for counting the number of hard links to the file.
+
 12) What access rights exist and for whom (i. e., describe the main roles)? Briefly describe the acronym for access rights.
 
 13) What is the sequence of defining the relationship between the file and the user?
