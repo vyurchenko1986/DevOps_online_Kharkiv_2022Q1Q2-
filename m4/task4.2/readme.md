@@ -87,6 +87,10 @@ To lock a users account we can use the command ```usermod -L``` or ```passwd -l`
 
 10) How to remove a user's password and provide him with a password-free login for subsequent password change?
 
+```passwd -d [username]```
+
+![Image alt](img/module_4_task_4-2_part1_10-1.png)
+
 11) Display the extended format of information about the directory, tell about the information columns displayed on the terminal.
 
 12) What access rights exist and for whom (i. e., describe the main roles)? Briefly describe the acronym for access rights.
