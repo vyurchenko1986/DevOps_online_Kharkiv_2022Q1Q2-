@@ -112,6 +112,14 @@ Access rights can be represented by 9 characters (like "rwxrwxrwx"). Each charac
 
 14) What commands are used to change the owner of a file (directory), as well as the mode of access to the file? Give examples, demonstrate on the terminal.
 
+We can use chown to change ownership and chmod to change rights.
+
++ -R option is used to apply the rights for all files inside of a directory too.
+
+```chown```, ```chmod```
+
+![Image alt](img/module_4_task_4-2_part1_14-1.png)
+
 15) What is an example of octal representation of access rights? Describe the umask command.
 
 16) Give definitions of sticky bits and mechanism of identifier substitution. Give an example of files and directories with these attributes.
