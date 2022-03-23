@@ -150,4 +150,20 @@ Let’s see how umask works:
 
 16) Give definitions of sticky bits and mechanism of identifier substitution. Give an example of files and directories with these attributes.
 
+Sticky Bit is mainly used on folders. If it is set, the folder context can be deleted only by owner who created them and the root user. No one else can delete other users data in this folder. This is a security measure to avoid deletion of critical folders and their, though other users have full permissions.
+
+For example, /tmp directory has a sticky bit.
+
+![Image alt](img/module_4_task_4-2_part1_16-1.png)
+
+Let’s create a new directory and set a sticky bit on it:
+
+![Image alt](img/module_4_task_4-2_part1_16-2.png)
+
+And now Pedro will try to create some file in this folder, and then remove the folder.
+
+![Image alt](img/module_4_task_4-2_part1_16-3.png)
+
+**We can see than Pedro can easily create files in the folder, but he has no permission to delete the folder.**
+
 17) What file attributes should be present in the command script?
