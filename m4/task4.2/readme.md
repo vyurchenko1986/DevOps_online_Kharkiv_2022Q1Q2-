@@ -69,6 +69,10 @@ We can add a new user by the following command: ```useradd [-c uid comment] [-d 
 
 7) What is skell_dir? What is its structure?
 
+skel_dir is a directory containing files that will be automatically copied to the new user's home directory.
+
+When creating a new user, this option is only valid if the -m (or --create-home) option is specified. If this option is not set, the skeleton directory is defined by the SKEL variable in ```/etc/default/useradd``` or, by default, ```/etc/skel```.
+
 8) How to remove a user from the system (including his mailbox)?
 
 9) What commands and keys should be used to lock and unlock a user account?
