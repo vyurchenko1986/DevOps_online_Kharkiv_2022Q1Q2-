@@ -164,6 +164,6 @@ And now Pedro will try to create some file in this folder, and then remove the f
 
 ![Image alt](img/module_4_task_4-2_part1_16-3.png)
 
-**We can see than Pedro can easily create files in the folder, but he has no permission to delete the folder.**
+**We can see than ```vyurchenko``` can easily create files in the folder, but he has no permission to delete the folder.**
 
 17) What file attributes should be present in the command script?
