@@ -354,4 +354,28 @@ __Socket Device__ - facilitates communication between processes, similar to pipe
 
 14) How to determine the type of file in the system, what types of files are there?
 
-15) * List the first 5 directory files that were recently accessed in the /etc directory.
+- Regular files ('-')
+- Directory files ('d')
+- Special files (5 types)
+- Block file('b')
+- Character device file('c')
+- Named pipe file or just a pipe file('p')
+- Symbolic link file('l')
+- Socket file('s')
+
+We can also use the ```ls``` command. The first bit on each line denotes the type of file.
+
+![Image alt](img/module_4_task_4-1_part2_14-1.png)
+
+```
+ls -l | grep ^- - Regular files
+ls -l | grep ^d - Directory Files
+ls -l | grep ^b - Block Files
+ls -l | grep ^c - Character device files
+ls -l | grep ^p - Pipe Files
+ls -l | grep ^l - Symbol link files
+ls -l | grep ^s - Socket Files
+find / -type s 
+```
+
+15) ** List the first 5 directory files that were recently accessed in the /etc directory.
