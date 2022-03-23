@@ -55,6 +55,12 @@ Available UIDs are usually splitted into two ranges:
 
 5) What are the commands for adding a user to the system? What are the basic parameters required to create a user?
 
+We can add a new user by the following command: ```useradd [-c uid comment] [-d dir] [-e expire] [-f inactive] [-g gid] [-m [-k skel_dir]] [-s shell] [-u uid [-o]] username```
+
+```sudo adduser student```
+
+![Image alt](img/module_4_task_4-2_part1_5-1.png)
+
 6) How do I change the name (account name) of an existing user?
 
 7) What is skell_dir? What is its structure?
