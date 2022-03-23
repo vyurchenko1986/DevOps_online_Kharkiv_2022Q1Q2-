@@ -49,6 +49,10 @@ Available UIDs are usually splitted into two ranges:
 
 4) How to determine belonging of user to the specific group?
 
+```groups owner```
+
+![Image alt](img/module_4_task_4-2_part1_4-1.png)
+
 5) What are the commands for adding a user to the system? What are the basic parameters required to create a user?
 
 6) How do I change the name (account name) of an existing user?
