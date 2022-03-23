@@ -26,7 +26,7 @@ These two files contain information about both real and pseudo-users. The most c
 + nobody (used by many services)
 + sshd (used by the secure shell server)
 
- Pseudo-users have UID range from 1 to 999. Also, we can + identify pseudo-users by looking at the last field of the line. It typically contains ```“/usr/sbin/nologin”``` or ```“/bin/false”```. When real users often have access to a shell (```”/bin/bash”```).
+ Pseudo-users have UID range from 1 to 999. Also, we can + identify pseudo-users by looking at the last field of the line. It typically contains ```"/usr/sbin/nologin"``` or ```"/bin/false"```. When real users often have access to a shell (```"/bin/bash"```).
 
 2) What are the uid ranges? What is UID? How to define it?
 
