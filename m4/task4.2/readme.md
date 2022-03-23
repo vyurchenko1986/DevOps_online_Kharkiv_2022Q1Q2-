@@ -167,3 +167,5 @@ And now ```vyurchenko``` will try to create some file in this folder, and then r
 **We can see than ```vyurchenko``` can easily create files in the folder, but he has no permission to delete the folder.**
 
 17) What file attributes should be present in the command script?
+
+The file must be executable for users so that the script can run. ```chmod +x script```
