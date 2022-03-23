@@ -75,6 +75,8 @@ When creating a new user, this option is only valid if the -m (or --create-home)
 
 8) How to remove a user from the system (including his mailbox)?
 
+```userdel -r [username]```
+
 9) What commands and keys should be used to lock and unlock a user account?
 
 10) How to remove a user's password and provide him with a password-free login for subsequent password change?
