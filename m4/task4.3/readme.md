@@ -304,6 +304,10 @@ When using nice or renice, we can select from priority values ranging from -20 t
 
 15. Can I change the priority of a process using the top command? If so, how?
 
+We can start top utility and press ```r```. Then we will be able to enter PID and change its niceness.
+
+![Image alt](img/module_4_task_4-3_part1_15-1.gif)
+
 16. Examine the kill command. How to send with the kill command process control signal? Give an example of commonly used signals.
 
 17. Commands jobs, fg, bg, nohup. What are they for? Use the sleep, yes command to demonstrate the process control mechanism with fg, bg.
