@@ -241,21 +241,66 @@ The ps command can filter by __real user names with the -U option__ and by __eff
 
 6. How to define kernel processes and user processes?
 
+A kernel processes always run in kernel mode and use kernel space only, when user processes have their own address space. In the COMMAND field when ```ps``` is executed, we see square brackets, when it is a kernel processes and a full path, when it is a user process.
+
 7. Print the list of processes to the terminal. Briefly describe the statuses of the processes. What condition are they in, or can they be arriving in?
+
++ R (running);
++ S (interruptible sleep (waiting for an event to complete));
++ D (uninterruptible sleep (waiting for I/O));
++ T (stopped);
++ Z (zombie);
++ X (dead).
+
+```ps aux | head```
+
+![Image alt](img/module_4_task_4-3_part1_7-1.png)
 
 8. Display only the processes of a specific user.
 
+```ps -ef | grep owner```
+
+![Image alt](img/module_4_task_4-3_part1_8-1.png)
+
 9. What utilities can be used to analyze existing running tasks (by analyzing the help for the ps command)?
+
+We can use ```top```, ```htop```, ```pstree```. They are all pretty similar.
 
 10. What information does top command display?
 
 11. Display the processes of the specific user using the top command.
 
+```top``` displays Linux processes. The command provides a dynamic real-time view of a running system. It can display system summary information as well as a list of processes or threads currently being managed by the Linux kernel.
+
+![Image alt](img/module_4_task_4-3_part1_11-1.png)
+
 12. What interactive commands can be used to control the top command? Give a couple of examples.
+
+__For example, we can use__:
+
++ Shift+N to sort by PID;
++ Shift+P to sort by CPU usage;
++ Shift+M to sort by Memory usage;
++ Shift+T to sort by Time usage;
++ Shift+Z to change colors;
++ C to display absolute path of command;
 
 13. Sort the contents of the processes window using various parameters (for example, the amount of processor time taken up, etc.)
 
+Processes sorted by the CPU time usage and the memory usage.
+
+![Image alt](img/module_4_task_4-3_part1_13-1.png)
+
 14. Concept of priority, what commands are used to set priority?
+
+All the processes in Linux are started with a specific priority. By default, all regular processes are started with the priority equal to 20. 
+
+You can change the priority using the nice and renice commands.
+
++ ```nice``` if you want to start a process with an adjusted priority.
++ ```renice``` to change the priority for a currently active process.
+
+When using nice or renice, we can select from priority values ranging from -20 to 19. The default niceness of a process is set to 0 (which results in the priority value of 20). By applying a negative niceness, you increase the priority. Use a positive niceness to decrease the priority. It is a good idea to use increments of 5 and see how it gradually affects the application.
 
 15. Can I change the priority of a process using the top command? If so, how?
 
