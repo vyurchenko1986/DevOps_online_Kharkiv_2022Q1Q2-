@@ -342,6 +342,29 @@ Part2
 
 2. Implement basic SSH settings to increase the security of the client-server connection (at least)
 
+```
+sudo nano /etc/ssh/sshd_config.d/my_config_sshd.conf
+
+PasswordAuthentication no
+PermitRootLogin no
+AllowUsers owner
+#AllowGroups sysadmin
+DenyUsers cvs apache
+DenyGroups developers qa
+Port 22022
+LoginGraceTime 1m
+#ListenAddress 192.168.10.200
+#ListenAddress 192.168.10.202
+ClientAliveInterval 600
+ClientAliveCountMax 0
+
+sudo systemctl restart ssh.service
+sudo systemctl status ssh.service
+
+```
+
+![Image alt](img/module_4_task_4-3_part2_2-1.png)
+
 3. List the options for choosing keys for encryption in SSH. Implement 3 of them.
 
 4. Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT.
