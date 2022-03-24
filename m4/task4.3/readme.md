@@ -4,7 +4,6 @@
 
 Task assignment.
 
-
 Part1
 1. How many states could has a process in Linux?
 
@@ -42,7 +41,6 @@ Part1
 
 
 Part2
-
 1. Check the implementability of the most frequently used OPENSSH commands in the MS Windows operating system. (Description of the expected result of the commands +screenshots: command – result should be presented)
 
 2. Implement basic SSH settings to increase the security of the client-server connection (at least)
