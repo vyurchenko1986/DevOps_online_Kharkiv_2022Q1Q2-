@@ -310,6 +310,16 @@ We can start top utility and press ```r```. Then we will be able to enter PID an
 
 16. Examine the kill command. How to send with the kill command process control signal? Give an example of commonly used signals.
 
+The ```kill``` command is used to send a signal to a process. The most common use is when we need to stop a process. To do this, we can use: kill PID command. The command sends the SIGTERM signal to the process, which normally causes the process to stop its activity.
+
+Sometimes the kill command does not work because the process we want to kill is busy. In that case, we can use ```kill -9 PID``` to send the SIGKILL signal to the process. The SIGKILL signal cannot be ignored, so it forces the process to stop, but we also risk losing data while using this command.
+
+__Some of the most common signals__:
+
++ SIGTERM (15) to ask a process to stop.
++ SIGKILL (9) to force a process to stop.
++ The SIGHUP (1) to hang up a process resulting in rereading the configuration files of the process. This signal is useful after making modifications to a process configuration file.
+
 17. Commands jobs, fg, bg, nohup. What are they for? Use the sleep, yes command to demonstrate the process control mechanism with fg, bg.
 
 
