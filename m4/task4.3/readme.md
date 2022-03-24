@@ -178,9 +178,66 @@ Sometimes we want to __see the spawned child processes__ rather than threads. We
 
 ![Image alt](img/module_4_task_4-3_part1_5-9.png)
 
-In this particular case, we can see a process hierarchy of all the processes in the system. Unfortunately, we cannot filter directly by the process id or process name.
+In this particular case, we can see a process hierarchy of all the processes in the system. Unfortunately, __we cannot filter directly by the process id or process name__.
 
-However, we can filter by session id (SID). To obtain it, we need to modify how ps prints the output. 
+However, __we can filter by session id (SID)__. To obtain it, we need to modify how ps prints the output. 
+
+First, let’s get the session id for our process:
+
+![Image alt](img/module_4_task_4-3_part1_5-10.png)
+
+Then, __we can filter by SID using the -g flag__ to obtain a smaller output:
+
+![Image alt](img/module_4_task_4-3_part1_5-11.png)
+
+Let’s focus a bit on this output. The __session id is equal to the process id that started the session__ — also called the session leader. In this case, the session leader is the firefox-esr process.
+
+The session leader spawned several child processes, including our process of interest. We can now see them in a tree-view output.
+
+__Controlling the Output__
+
+So far, we have only seen the default output and the more detailed output. This is not very helpful in some cases, especially if we want to automatically process the output of ps with the help of other utilities such as read.
+
+We can __control which columns are printed with the help of the -o flag__:
+
+![Image alt](img/module_4_task_4-3_part1_5-12.png)
+
+We can also __influence the order in which we print them__:
+
+![Image alt](img/module_4_task_4-3_part1_5-13.png)
+
+The ps command supports a multitude of output modifiers. For their complete descriptions, we can always consult the [man page](https://man7.org/linux/man-pages/man1/ps.1.html#STANDARD_FORMAT_SPECIFIERS).
+
+Since there are a lot of modifiers, let’s just experiment with some of the more interesting ones:
+
+![Image alt](img/module_4_task_4-3_part1_5-14.png)
+
+Let’s explain this output a bit:
+
++ RSS represents the non-swapped physical memory used, in kilobytes
++ MEM is the percentage of the physical memory the process uses (ratio between RSS and total physical memory of the system)
++ STAT is the multi-character process state (in this case, the process is multi-threaded and in interruptible sleep)
++ VSZ represents the virtual memory size in kilobytes
+
+__Effective and Real User Name__
+
+When it comes to processes, __in Linux, we distinguish between two types of user names: real and effective__.
+
+The real user name is the one that started the process. The effective user is the one that owns the executable behind the process.
+
+Let’s run the ```passwd``` utility in a separate terminal and let it wait for our prompt:
+
+![Image alt](img/module_4_task_4-3_part1_5-15.png)
+
+Now, let’s see what happens if we print out the real and effective user names with ps:
+
+![Image alt](img/module_4_task_4-3_part1_5-16.png)
+
+__The real user is different from the effective user__. That’s because passwd is owned by root but has been called by our user.
+
+This particular behavior is valid for setuid compatible executables. It happens __when the current user needs to run programs with temporarily elevated privileges__.
+
+The ps command can filter by __real user names with the -U option__ and by __effective user names with the -u option__.
 
 6. How to define kernel processes and user processes?
 
