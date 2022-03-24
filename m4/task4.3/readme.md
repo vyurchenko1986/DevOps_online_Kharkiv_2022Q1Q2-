@@ -66,6 +66,12 @@ If pstree is called without options, you get the following output, for example:
 
 ![Image alt](img/module_4_task_4-3_part1_2-1.png)
 
+If the PIDs of the individual processes are also to be displayed, the output looks like this:
+
+```pstree -p```
+
+![Image alt](img/module_4_task_4-3_part1_2-2.png)
+
 3. What is a proc file system?
 
 4. Print information about the processor (its type, supported technologies, etc.).
