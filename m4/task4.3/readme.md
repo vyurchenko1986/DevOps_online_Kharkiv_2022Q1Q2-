@@ -16,6 +16,56 @@ A Linux process has 5 states:
 
 2. Examine the pstree command. Make output (highlight) the chain (ancestors) of the current process.
 
+__installation__
+
+The pstree program is usually included in the standard installation, but can otherwise be obtained via the package ```sudo apt install psmisc```
+
+__syntax__
+
+pstree is called in a terminal with the following command:
+
+```pstree OPTIONS```
+
+__options__
+
+The pstree command has the following options:
+
+```
+-a Displays the command line arguments used to invoke the appropriate process.
+
+-c Identical subtrees are not merged, i.e. turn off the default compact output.
+
+-l Does not create a line break for "long" lines (> 132 characters), but displays them completely.
+
+-h Highlight the current process and its ancestors in bold.
+
+-p Displays the process identification number PID of the respective process in addition to the process name.
+
+-n Output is sorted by process identification number and not by process name.
+
+-H PID Highlights the process with the process identification number PID
+
+-u Display the UID if the UID of the child process differs from that of the parent process.
+
+-A Use only ASCII characters for output.
+
+-U Use only UTF-8 characters for output.
+
+-G Use VT-100 exclusively for output.
+
+-V Displays information about the version used.
+
+USER shows only the processes started by USER.
+```
+
+__examples__
+
+If pstree is called without options, you get the following output, for example:
+
+```pstree```
+
+![Image alt](img/module_4_task_4-3_part1_2-1.png)
+
 3. What is a proc file system?
 
 4. Print information about the processor (its type, supported technologies, etc.).
