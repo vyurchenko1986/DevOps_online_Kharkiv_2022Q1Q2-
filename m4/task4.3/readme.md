@@ -72,6 +72,12 @@ If the PIDs of the individual processes are also to be displayed, the output loo
 
 ![Image alt](img/module_4_task_4-3_part1_2-2.png)
 
+It should be displayed with which (command line) options the process was called:
+
+```pstree -a```
+
+![Image alt](img/module_4_task_4-3_part1_2-3.png)
+
 3. What is a proc file system?
 
 4. Print information about the processor (its type, supported technologies, etc.).
