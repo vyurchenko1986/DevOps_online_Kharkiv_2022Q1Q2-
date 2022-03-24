@@ -367,6 +367,18 @@ sudo systemctl status ssh.service
 
 3. List the options for choosing keys for encryption in SSH. Implement 3 of them.
 
+SSH supports several public key algorithms for authentication keys.
+
++ __rsa__ - an old algorithm based on the difficulty of factoring large numbers. A recommended key size of at least is 2048 bits; 4096 bits is better.
+
++ __dsa__ - an old US government Digital Signature Algorithm. It is based on the difficulty of computing discrete logarithms. A key size of 1024 would normally be used with it. DSA in its original form is no longer recommended.
+
++ __ecdsa__ - a new Digital Signature Algorithm standarized by the US government, using elliptic curves. Only three key sizes are supported: 256, 384, and 521 bits. Recommended using it with 521 bits, since the keys are still small.
+
++ __ed25519__ - a new algorithm added in OpenSSH. Support for it in clients is not yet universal.
+
+![Image alt](img/module_4_task_4-3_part2_3-1.png)
+
 4. Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT.
 
 5*. Intercept (capture) traffic (tcpdump, wireshark) while authorizing the remote client on the server using ssh, telnet, rlogin. Analyze the result.
