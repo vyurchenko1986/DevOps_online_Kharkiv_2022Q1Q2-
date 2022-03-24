@@ -119,7 +119,7 @@ __By default__, __it prints the processes of the current user and terminal__ in 
 + TIME – elapsed CPU utilization time for the process
 + CMD – the executable command
 
-Listing All Processes
+__Listing All Processes__
 
 Let’s use the __-e flag to print all the processes within the system__, not just the ones from the current terminal:
 
@@ -138,7 +138,7 @@ Let’s take a closer look at this example to understand it better. We now have 
 
 Furthermore, when ps can identify the process arguments, it will also print them in the CMD column.
 
-Simple Filtering
+__Simple Filtering__
 
 In practice, we’re most likely __searching for a particular process by name with the -C__ option:
 
@@ -146,6 +146,41 @@ In practice, we’re most likely __searching for a particular process by name wi
 
 Notice that __we use the complete process executable name__ rather than a substring.
 
+Additionally, ps also allows us to __filter based on a list of process ids using the -p__ flag:
+
+![Image alt](img/module_4_task_4-3_part1_5-5.png)
+
+We can also __search by the user name by specifying it in the -u__ option:
+
+![Image alt](img/module_4_task_4-3_part1_5-6.png)
+
+__Listing Threads__
+
+In some situations, it might be useful to know the spawned threads of a particular process:
+
+![Image alt](img/module_4_task_4-3_part1_5-7.png)
+
+Let’s see what happened. We first started the ```gedit``` text editor and typed some random strings inside it.
+
+Then, we filtered by the process name __and passed the -L option to print out the spawned threads__.
+
+The additional __LWP column represents the thread id__.
+
+If we want additional output, we can also combine this with the -f option:
+
+![Image alt](img/module_4_task_4-3_part1_5-8.png)
+
+We now obtain the __total number of threads of the process in the NLWP column__.
+
+__Listing Child Processes__
+
+Sometimes we want to __see the spawned child processes__ rather than threads. We can achieve this __with the -H option__:
+
+![Image alt](img/module_4_task_4-3_part1_5-9.png)
+
+In this particular case, we can see a process hierarchy of all the processes in the system. Unfortunately, we cannot filter directly by the process id or process name.
+
+However, we can filter by session id (SID). To obtain it, we need to modify how ps prints the output. 
 
 6. How to define kernel processes and user processes?
 
