@@ -102,6 +102,51 @@ For organizational purposes, files containing information on a similar topic are
 
 5. Use the ps command to get information about the process. The information should be as follows: the owner of the process, the arguments with which the process was launched for execution, the group owner of this process, etc.
 
+__Syntax__
+
+Let’s take a look at the basic syntax:
+
+```ps [options]```
+
+Since all arguments are optional, let’s see what it does with no options:
+
+![Image alt](img/module_4_task_4-3_part1_5-1.png)
+
+__By default__, __it prints the processes of the current user and terminal__ in four columns:
+
++ PID – the process id
++ TTY – terminal associated with the process
++ TIME – elapsed CPU utilization time for the process
++ CMD – the executable command
+
+Listing All Processes
+
+Let’s use the __-e flag to print all the processes within the system__, not just the ones from the current terminal:
+
+![Image alt](img/module_4_task_4-3_part1_5-2.png)
+
+We can also __see a more detailed output by using the -f__ option:
+
+![Image alt](img/module_4_task_4-3_part1_5-3.png)
+
+Let’s take a closer look at this example to understand it better. We now have some additional columns:
+
++ UID – the user id of the process owner
++ PPID – the parent process id (in this particular snippet, rcu_gp was spawned by kthread)
++ C – the CPU utilization in percentage
++ STIME – the start time of the process
+
+Furthermore, when ps can identify the process arguments, it will also print them in the CMD column.
+
+Simple Filtering
+
+In practice, we’re most likely __searching for a particular process by name with the -C__ option:
+
+![Image alt](img/module_4_task_4-3_part1_5-4.png)
+
+Notice that __we use the complete process executable name__ rather than a substring.
+
+
 6. How to define kernel processes and user processes?
 
 7. Print the list of processes to the terminal. Briefly describe the statuses of the processes. What condition are they in, or can they be arriving in?
