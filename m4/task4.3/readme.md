@@ -329,6 +329,8 @@ __Some of the most common signals__:
 
 ![Image alt](img/module_4_task_4-3_part1_17-1.png)
 
+![Image alt](img/module_4_task_4-3_part1_17-2.png)
+
 Part2
 1. Check the implementability of the most frequently used OPENSSH commands in the MS Windows operating system. (Description of the expected result of the commands +screenshots: command – result should be presented)
 
