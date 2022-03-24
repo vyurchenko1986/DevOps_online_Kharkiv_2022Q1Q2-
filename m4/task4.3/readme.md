@@ -96,6 +96,10 @@ For organizational purposes, files containing information on a similar topic are
 
 4. Print information about the processor (its type, supported technologies, etc.).
 
+```sudo cat /proc/cpuinfo | less```
+
+![Image alt](img/module_4_task_4-3_part1_4-1.gif)
+
 5. Use the ps command to get information about the process. The information should be as follows: the owner of the process, the arguments with which the process was launched for execution, the group owner of this process, etc.
 
 6. How to define kernel processes and user processes?
