@@ -322,6 +322,12 @@ __Some of the most common signals__:
 
 17. Commands jobs, fg, bg, nohup. What are they for? Use the sleep, yes command to demonstrate the process control mechanism with fg, bg.
 
++ __jobs__ - lists the active jobs.
++ __fg__ - moves a job to the foreground.
++ __bg__ - moves a job to the background.
++ __nohup__ - allows jobs to continue after logout. We can stop nohup process using kill.
+
+![Image alt](img/module_4_task_4-3_part1_17-1.png)
 
 Part2
 1. Check the implementability of the most frequently used OPENSSH commands in the MS Windows operating system. (Description of the expected result of the commands +screenshots: command – result should be presented)
