@@ -395,6 +395,7 @@ sudo tcpdump -vv -i any -nn port 22 -w dump.pcap
 For Telnet I used command:
 sudo tcpdump -vv -i any -nn port 23 -w dump_23.pcap
 ```
+![Image alt](img/module_4_task_4-3_part2_5-1.png)
 
 ![Image alt](img/module_4_task_4-3_part2_5-0.png)
 
