@@ -381,4 +381,21 @@ SSH supports several public key algorithms for authentication keys.
 
 4. Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT.
 
+![Image alt](img/module_4_task_4-3_part2_4-1.png)
+
 5*. Intercept (capture) traffic (tcpdump, wireshark) while authorizing the remote client on the server using ssh, telnet, rlogin. Analyze the result.
+
+```
+sudo apt install tcpdump
+sudo apt install telnetd
+
+For SSH I used command:
+sudo tcpdump -vv -i any -nn port 22 -w dump.pcap
+
+For Telnet I used command:
+sudo tcpdump -vv -i any -nn port 23 -w dump_23.pcap
+```
+
+![Image alt](img/module_4_task_4-3_part2_5-1.png)
+
+![Image alt](img/module_4_task_4-3_part2_5-2.png)
