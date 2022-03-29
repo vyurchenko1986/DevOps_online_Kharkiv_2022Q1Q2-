@@ -64,7 +64,11 @@ One of to the reasons why ```less``` was introduced was to allow backward moveme
 
 ![Image alt](img/module_4_task_4-1_part1_6-2.gif)
 
-7) * Describe in plans that you are working on laboratory work 1. Tip: You should read the documentation for the finger command.
+7) * Determine the last logon time for all users. Tip: You should read the documentation for the finger command.
+
+``` grep "x:[0-1]...:[1000-65533]" /etc/passwd | cut -d: -f1 | xargs -n1 finger -s ```
+
+![Image alt](img/module_4_task_4-1_part1_7-0.png)
 
 What is finger?
 finger command is used to lookup information about an user.
