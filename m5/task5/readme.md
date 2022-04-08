@@ -67,6 +67,60 @@ dns-nameserver 10.11.86.254
 
 2. На Server_1 налаштувати DHCP сервіс, який буде конфігурувати адреси Int1 Client_1 та Client_2
 
+![Image alt](img/module_5_task_5_part1_2.png)
+
+![Image alt](img/module_5_task_5_part1_2-1.png)
+
+```
+sudo apt install isc-dhcp-server
+sudo systemctl restart isc-dhcp-server.service
+sudo systemctl status isc-dhcp-server.service
+sudo tail -f /var/log/syslog
+
+sudo cp /etc/default/isc-dhcp-server{,.orig}
+sudo nano /etc/default/isc-dhcp-server
+INTERFACESv4="int2 int3"
+
+sudo cp /etc/dhcp/dhcpd.conf{,.orig}
+sudo nano /etc/dhcp/dhcpd.conf
+
+default-lease-time 600;
+max-lease-time 7200;
+authoritative;
+
+# Net2 – 10.86.27.0/24:
+subnet 10.86.27.0 netmask 255.255.255.0 {
+range 10.86.27.150 10.86.27.253;
+option routers 10.86.27.254;
+option domain-name-servers 10.86.27.254, 8.8.8.8;
+option domain-name "mydomain.example";
+}
+
+# Net3 – 10.11.86.0/24:
+subnet 10.11.86.0 netmask 255.255.255.0 {
+range 10.11.86.150 10.11.86.253;
+option routers 10.11.86.254;
+option domain-name-servers 10.11.86.254, 8.8.8.8;
+option domain-name "mydomain.example";
+}
+
+host client01 {
+  hardware ethernet 08:00:27:48:de:81;
+  fixed-address 10.86.27.253;
+}
+
+host client02 {
+  hardware ethernet 08:00:27:7e:7e:be;
+  fixed-address 10.11.86.253;
+}
+
+sudo systemctl restart isc-dhcp-server.service
+sudo systemctl status isc-dhcp-server.service
+sudo systemctl enable isc-dhcp-server.service
+
+sudo dhcp-lease-list
+```
+
 3. За допомогою команд ping та traceroute перевірити зв'язок між віртуальними машинами. Результат пояснити.
 Увага! Для того, щоб з Client_1 та Client_2 проходили пакети в мережу Internet (точніше щоб повертались з Internet на Client_1 та Client_2) на Wi-Fi Router необхідно налаштувати статичні маршрути для мереж Net2 та Net3
 
