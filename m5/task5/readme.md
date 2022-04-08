@@ -25,6 +25,46 @@ __Увага!__ Якщо, адресний простір Net2, Net3 або Net4
 
 1. На Server_1 налаштувати статичні адреси на всіх інтерфейсах.
 
+```
+Server_1:
+
+sudo ip addr add 192.168.31.253/24 dev enp0s3
+sudo ip route add default via 192.168.31.1
+
+sudo apt install net-tools
+
+sudo nano /etc/udev/rules.d/1-user-network.rules
+KERNEL=="enp0s3", ,ATTR{address}=="08:00:27:8c:0d:54", NAME="int1"
+KERNEL=="enp0s8", ,ATTR{address}=="08:00:27:02:96:ac", NAME="int2"
+KERNEL=="enp0s9", ,ATTR{address}=="08:00:27:6d:0e:69", NAME="int3"
+
+sudo nano /etc/network/interfaces
+allow-hotplug int1
+iface int1 inet static
+address 192.168.31.253
+netmask 255.255.255.0
+gateway 192.168.31.1
+dns-nameserver 192.168.31.1
+
+# Net2 – 10.86.27.0/24:
+allow-hotplug int2
+iface int2 inet static
+address 10.86.27.254
+netmask 255.255.255.0
+gateway 10.86.27.254
+dns-nameserver 10.86.27.254
+
+# Net3 – 10.11.86.0/24:
+allow-hotplug int3
+iface int3 inet static
+address 10.11.86.254
+netmask 255.255.255.0
+gateway 10.11.86.254
+dns-nameserver 10.11.86.254
+```
+
+![Image alt](img/module_5_task_5_part1_1.png)
+
 2. На Server_1 налаштувати DHCP сервіс, який буде конфігурувати адреси Int1 Client_1 та Client_2
 
 3. За допомогою команд ping та traceroute перевірити зв'язок між віртуальними машинами. Результат пояснити.
