@@ -52,7 +52,7 @@ iface int2 inet static
 address 10.86.27.254
 netmask 255.255.255.0
 gateway 10.86.27.254
-dns-nameserver 10.86.27.254
+#dns-nameserver 10.86.27.254
 
 # Net3 – 10.11.86.0/24:
 allow-hotplug int3
@@ -60,7 +60,7 @@ iface int3 inet static
 address 10.11.86.254
 netmask 255.255.255.0
 gateway 10.11.86.254
-dns-nameserver 10.11.86.254
+#dns-nameserver 10.11.86.254
 ```
 
 ![Image alt](img/module_5_task_5_part1_1.png)
@@ -92,7 +92,7 @@ authoritative;
 subnet 10.86.27.0 netmask 255.255.255.0 {
 range 10.86.27.150 10.86.27.253;
 option routers 10.86.27.254;
-option domain-name-servers 10.86.27.254, 8.8.8.8;
+option domain-name-servers 8.8.8.8, 4.4.8.8;
 option domain-name "mydomain.example";
 }
 
@@ -100,7 +100,7 @@ option domain-name "mydomain.example";
 subnet 10.11.86.0 netmask 255.255.255.0 {
 range 10.11.86.150 10.11.86.253;
 option routers 10.11.86.254;
-option domain-name-servers 10.11.86.254, 8.8.8.8;
+option domain-name-servers 8.8.8.8, 4.4.8.8;
 option domain-name "mydomain.example";
 }
 
