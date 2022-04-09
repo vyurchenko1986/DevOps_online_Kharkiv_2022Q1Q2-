@@ -92,7 +92,7 @@ authoritative;
 subnet 10.86.27.0 netmask 255.255.255.0 {
 range 10.86.27.150 10.86.27.253;
 option routers 10.86.27.254;
-option domain-name-servers 8.8.8.8, 4.4.8.8;
+option domain-name-servers 8.8.8.8, 8.8.4.4;
 option domain-name "mydomain.example";
 }
 
@@ -100,7 +100,7 @@ option domain-name "mydomain.example";
 subnet 10.11.86.0 netmask 255.255.255.0 {
 range 10.11.86.150 10.11.86.253;
 option routers 10.11.86.254;
-option domain-name-servers 8.8.8.8, 4.4.8.8;
+option domain-name-servers 8.8.8.8, 8.8.4.4;
 option domain-name "mydomain.example";
 }
 
