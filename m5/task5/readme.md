@@ -140,3 +140,17 @@ sudo dhcp-lease-list
 + З Client_1 на 172.17.D+10.1 ping проходив, а на 172.17.D+20.1 не проходив
 
 8. Якщо в п.3 була налаштована маршрутизація для доступу Client_1 та Client_2 до мережі Інтернет – видалити відповідні записи. На Server_1 налаштувати NAT сервіс таким чином, щоб з Client_1 та Client_2 проходив ping в мережу Інтернет
+
+```
+sudo nano /etc/sysctl.conf
+net.ipv4.ip_forward=1
+
+sudo apt install iptables
+sudo iptables -t nat -A POSTROUTING -o int1 -j MASQUERADE
+sudo iptables-save > /etc/iptables.up.rules
+
+sudo nano /etc/network/interfaces
+pre-up iptables-restore < /etc/iptables.up.rules
+```
+
+![Image alt](img/module_5_task_5_part1_8.png)
