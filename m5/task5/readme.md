@@ -145,6 +145,8 @@ sudo dhcp-lease-list
 sudo nano /etc/sysctl.conf
 net.ipv4.ip_forward=1
 
+sudo sysctl -w net.ipv4.ip_forward="1"
+
 sudo apt install iptables
 sudo iptables -t nat -A POSTROUTING -o int1 -j MASQUERADE
 sudo iptables-save > /etc/iptables.up.rules
