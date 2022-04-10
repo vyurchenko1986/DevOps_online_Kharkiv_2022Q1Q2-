@@ -120,6 +120,7 @@ sudo systemctl status isc-dhcp-server.service
 sudo systemctl enable isc-dhcp-server.service
 
 sudo dhcp-lease-list
+cat /var/lib/dhcp/dhcpd.leases | less
 ```
 
 3. За допомогою команд ping та traceroute перевірити зв'язок між віртуальними машинами. Результат пояснити.
