@@ -163,7 +163,7 @@ sudo ip route del 172.17.47.0/24 via 172.16.27.1
 #server01
 sudo ip route del 172.17.37.0/24 via 10.86.27.253
 
-#server01
+#server01 add Summary Static Routes:
 sudo ip route add 172.17.0.0/16 via 10.86.27.253
 ```
 
