@@ -177,6 +177,12 @@ sudo ip route add 172.17.0.0/16 via 10.86.27.253
 
 + Дозволено підключатись через SSH з Client_1 та заборонено з Client_2
 
+```
+sudo iptables -A INPUT -p tcp --dport ssh -s 10.11.86.253 -j DROP
+sudo iptables -n -L -v --line-numbers
+```
+![Image alt](img/module_5_task_5_part1_7.png)
+
 + З Client_1 на 172.17.D+10.1 ping проходив, а на 172.17.D+20.1 не проходив
 
 8. Якщо в п.3 була налаштована маршрутизація для доступу Client_1 та Client_2 до мережі Інтернет – видалити відповідні записи. На Server_1 налаштувати NAT сервіс таким чином, щоб з Client_1 та Client_2 проходив ping в мережу Інтернет
