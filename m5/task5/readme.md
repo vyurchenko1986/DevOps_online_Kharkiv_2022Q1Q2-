@@ -181,9 +181,19 @@ sudo ip route add 172.17.0.0/16 via 10.86.27.253
 sudo iptables -A INPUT -p tcp --dport ssh -s 10.11.86.253 -j DROP
 sudo iptables -n -L -v --line-numbers
 ```
+
 ![Image alt](img/module_5_task_5_part1_7.png)
 
 + З Client_1 на 172.17.D+10.1 ping проходив, а на 172.17.D+20.1 не проходив
+
+```
+sudo iptables -A INPUT -p icmp --icmp-type echo-request -s 172.17.47.1 -d 172.17.47.1 -j REJECT
+
+sudo iptables -n -L -v --line-numbers
+sudo iptables -D INPUT 1
+```
+
+![Image alt](img/module_5_task_5_part1_7-1.png)
 
 8. Якщо в п.3 була налаштована маршрутизація для доступу Client_1 та Client_2 до мережі Інтернет – видалити відповідні записи. На Server_1 налаштувати NAT сервіс таким чином, щоб з Client_1 та Client_2 проходив ping в мережу Інтернет
 
