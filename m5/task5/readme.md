@@ -166,9 +166,12 @@ sudo ip route del 172.17.37.0/24 via 10.86.27.253
 #server01
 sudo ip route add 172.17.0.0/16 via 10.86.27.253
 ```
+
 ![Image alt](img/module_5_task_5_part1_5-1.png)
 
 6. Налаштувати SSH сервіс таким чином, щоб Client_1 та Client_2 могли підключатись до Server_1 та один до одного.
+
+![Image alt](img/module_5_task_5_part1_6.png)
 
 7. Налаштуйте на Server_1 firewall таким чином:
 
