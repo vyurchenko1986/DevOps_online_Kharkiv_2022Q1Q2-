@@ -241,6 +241,14 @@ Result of script with argument ```--most_requested_page```:
 
 ![Image alt](img/module_6_task_6_1_part1_b_3.png)
 
+Result of script with argument ```--request_count_for_ip```:
+
+```
+./script_b.sh --request_count_for_ip apache_logs.txt 11
+```
+
+![Image alt](img/module_6_task_6_1_part1_b_4.png)
+
 C. Create a data backup script that takes the following data as parameters:
 1. Path to the syncing directory.
 2. The path to the directory where the copies of the files will be stored.
