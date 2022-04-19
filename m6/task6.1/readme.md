@@ -324,7 +324,7 @@ dt=$(date '+%d.%m.%Y_%H:%M:%S');
 for var1 in $(diff -y --suppress-common-lines $tmpdir/ls.tmp $tmpdir/snapshot.tmp | awk '{print $1}' | sed 's/>//g; /^[[:space:]]*$/d')
 do
         echo "$dt CREATED $var1" >> $log
-        tar -rvf $dstdir/Backup.tar $srcdir/$var1 > /dev/null 
+        tar -rvf $dstdir/backup.tar $srcdir/$var1 > /dev/null 
         echo "$dt BACKUPED $var1" >> $log
 done
 
