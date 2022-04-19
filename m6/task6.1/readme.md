@@ -299,7 +299,7 @@ then
 elif ! [[ -d $2 ]]
 then
     	echo -e "\033[31m Destination directory is absent, trying to create $2 !\033[0m"
-	mkdir "$2" 
+	mkdir -p "$2" 
 	echo -e "\033[32m Directory $2 created!\033[0m"
 fi
 
