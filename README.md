@@ -12,4 +12,4 @@
 
 + Lecture 16. Linux networking basics [[task5.1]](https://github.com/vyurchenko1986/DevOps_online_Kharkiv_2022Q1Q2-/tree/main/m5/task5.1)
 
-+ Lecture 19. Linux Administration with Bash [[task6.1]](https://github.com/vyurchenko1986/)
++ Lecture 19. Linux Administration with Bash [[task6.1]](https://github.com/vyurchenko1986/DevOps_online_Kharkiv_2022Q1Q2-/tree/main/m6/task6.1)
