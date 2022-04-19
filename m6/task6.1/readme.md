@@ -249,6 +249,14 @@ Result of script with argument ```--request_count_for_ip```:
 
 ![Image alt](img/module_6_task_6_1_part1_b_4.png)
 
+Result of script with argument ```--non-existent_pages_visited```:
+
+```
+./script_b.sh --non-existent_pages_visited apache_logs.txt 9
+```
+
+![Image alt](img/module_6_task_6_1_part1_b_5.png)
+
 C. Create a data backup script that takes the following data as parameters:
 1. Path to the syncing directory.
 2. The path to the directory where the copies of the files will be stored.
