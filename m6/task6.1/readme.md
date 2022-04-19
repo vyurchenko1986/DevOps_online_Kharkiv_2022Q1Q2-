@@ -354,7 +354,7 @@ Add to crontab:
 ```
 crontab -e
 
-*/1 * * * * /home/vyurchenko/script_c.sh /home/vyurchenko/testfoldet /home/kiykomi/backup
+*/1 * * * * /home/vyurchenko/script_c.sh /home/vyurchenko/testfoldet /home/vyurchenko/backup
 
 crontab -l
 ```
