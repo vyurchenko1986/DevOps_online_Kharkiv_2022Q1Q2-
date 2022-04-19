@@ -219,6 +219,27 @@ then
 fi
 ```
 
+And let's see how it works on screenshots:
+
+Result of script without arguments:
+
+![Image alt](img/module_6_task_6_1_part1_b_1.png)
+
+Result of script with argument ```--most_popular_ip_requests```:
+
+```
+./script_b.sh --most_popular_ip_requests apache_logs.txt 5
+```
+
+![Image alt](img/module_6_task_6_1_part1_b_2.png)
+
+Result of script with argument ```--most_requested_page```:
+
+```
+./script_b.sh --most_requested_page apache_logs.txt 10
+```
+
+![Image alt](img/module_6_task_6_1_part1_b_3.png)
 
 C. Create a data backup script that takes the following data as parameters:
 1. Path to the syncing directory.
