@@ -348,3 +348,17 @@ Result:
 ![Image alt](img/module_6_task_6_1_part1_c_3.png)
 
 ![Image alt](img/module_6_task_6_1_part1_c_4.png)
+
+Add to crontab:
+
+```
+crontab -e
+
+*/1 * * * * /home/vyurchenko/script_c.sh /home/vyurchenko/testfoldet /home/kiykomi/backup
+
+crontab -l
+```
+
+![Image alt](img/module_6_task_6_1_part1_c_6.png)
+
+![Image alt](img/module_6_task_6_1_part1_c_7.png)
