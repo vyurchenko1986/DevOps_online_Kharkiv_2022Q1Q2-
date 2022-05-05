@@ -151,14 +151,13 @@ mysql> CREATE TABLE Students(
     Teacher_id INT NOT NULL,
     Average_score INT NOT NULL);
 
-mysql> show tables;
-
 mysql> INSERT INTO Students(Student_id, Student_name, Student_phone, Student_email, Cource_id, Cource_status, Teacher_id, Average_score) VALUES(1, "Valery Yurchenko", 380633753653, "vyurchenko1986@gmail.com", 1, 'completed', 1, 99);
 mysql> INSERT INTO Students(Student_id, Student_name, Student_phone, Student_email, Cource_id, Cource_status, Teacher_id, Average_score) VALUES(2, "Veronika Krasilia", 380633753002, "vkrasilia@gmail.com", 1, 'completed', 3, 64);
 mysql> INSERT INTO Students(Student_id, Student_name, Student_phone, Student_email, Cource_id, Cource_status, Teacher_id, Average_score) VALUES(3, "Viacheslav Chudnov", 380633753003, "v.goodinov@gmail.com", 2, 'on the go', 3, 77);
 mysql> INSERT INTO Students(Student_id, Student_name, Student_phone, Student_email, Cource_id, Cource_status, Teacher_id, Average_score) VALUES(4, "Vitaliy Burbela", 380633753004, "vitaliybravo@gmail.com", 1, 'completed', 2, 91);
 mysql> INSERT INTO Students(Student_id, Student_name, Student_phone, Student_email, Cource_id, Cource_status, Teacher_id, Average_score) VALUES(5, "Vitaliy Belyh", 380633753005, "v.bh@ukr.net", 1, 'completed', 2, 44);
 mysql> INSERT INTO Students(Student_id, Student_name, Student_phone, Student_email, Cource_id, Cource_status, Teacher_id, Average_score) VALUES(6, "Vitaly Morozov", 380633753006, "morozv.vitaly@gmail.com", 2, 'on the go', 3, 80);
+
 
 mysql> CREATE TABLE Cources(
     Cource_id INT NOT NULL,
@@ -170,7 +169,6 @@ mysql> INSERT INTO Cources(Cource_id, Cource_name, Cource_Duration) VALUES(2, "J
 mysql> INSERT INTO Cources(Cource_id, Cource_name, Cource_Duration) VALUES(3, "JavaScript", 90);
 mysql> INSERT INTO Cources(Cource_id, Cource_name, Cource_Duration) VALUES(4, "Web", 60);
 
-mysql> select * from Cources;
 
 mysql> CREATE TABLE Teachers(
     Teacher_id INT NOT NULL,
