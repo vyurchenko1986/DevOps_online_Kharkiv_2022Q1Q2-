@@ -4,7 +4,69 @@
 PART 1
 1. Download MySQL server for your OS on VM. 
 
+```
+# Updating Operating System
+sudo apt update && sudo apt upgrade
+
+# Install WGET package
+sudo apt install wget -y
+
+# Import the MySQL Repository
+cd /tmp
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.18-1_all.deb
+```
+
 2. Install MySQL server on VM. 
+
+```
+# Install the release package
+sudo dpkg -i mysql-apt-config_0.8.18-1_all.deb
+```
+
+During the MySQL repository installation, you will see the following pop-up windows:
+
+Select Buster and press enter key:
+
+![Image alt](img/module_7_task_7_1_part1_2.png)
+
+Select OK to proceed with the installation:
+
+![Image alt](img/module_7_task_7_1_part1_2_2.png)
+
+Once done, you will get the following message back in your terminal: ```OK```
+
+To reflect the new repository, use the apt update command:
+
+```sudo apt update```
+
+Install MySQL 8:
+```
+sudo apt install mysql-server 
+```
+During the installation, a new popup will appear, prompting you to enter the database root password.
+
+Once entered, press the __enter key or press tab key to select the ```<Ok>``` and hit enter__ to proceed with the installation:
+
+![Image alt](img/module_7_task_7_1_part1_2_3.png)
+
+Note, you will be prompted to re-enter the root password a second time to confirm.
+
+Next, another popup will appear for you to read about the new authentication system.
+
+![Image alt](img/module_7_task_7_1_part1_2_4.png)
+
+Next, set the default selection for MySQL for authentication plugin as below:
+
+![Image alt](img/module_7_task_7_1_part1_2_5.png)
+
+The installation should finish up after this point. To confirm it has been successfully installed, run the following apt policy command, which will also confirm the current version and build of the MySQL database server:
+
+```
+apt policy mysql-server
+```
+Example output:
+
+![Image alt](img/module_7_task_7_1_part1_2_6.png)
 
 3. Select a subject area and describe the database schema, (minimum 3 tables) 
 
