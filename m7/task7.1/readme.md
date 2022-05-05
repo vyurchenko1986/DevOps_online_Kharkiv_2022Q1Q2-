@@ -124,6 +124,16 @@ Example Only:
 
 4. Create a database on the server through the console. 
 
+```
+sudo mysql -u root -p
+
+mysql> show databases;
+mysql> CREATE DATABASE TrainingEpam;
+mysql> show databases;
+```
+
+![Image alt](img/module_7_task_7_1_part1_4.png)
+
 5. Fill in tables. 
 
 6. Construct and execute SELECT operator with WHERE, GROUP BY and ORDER BY. 
