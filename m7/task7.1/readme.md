@@ -120,6 +120,8 @@ Example Only:
 
 3. Select a subject area and describe the database schema, (minimum 3 tables) 
 
+![Image alt](img/module_7_task_7_1_part1_3.png)
+
 4. Create a database on the server through the console. 
 
 5. Fill in tables. 
