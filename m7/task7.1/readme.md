@@ -68,6 +68,56 @@ Example output:
 
 ![Image alt](img/module_7_task_7_1_part1_2_6.png)
 
+Check MySQL 8 server status:
+
+```
+sudo systemctl status mysql 
+```
+
+Example output:
+
+![Image alt](img/module_7_task_7_1_part1_2_7.png)
+
+```
+# To stop the MySQL service:
+sudo systemctl stop mysql
+
+# To start the MySQL service:
+sudo systemctl start mysql
+
+# To disable the MySQL service on system boot:
+sudo systemctl disable mysql
+
+# To enable the MySQL service on system boot:
+sudo systemctl enable mysql
+
+# To restart the MySQL service:
+sudo systemctl restart mysql
+```
+Secure MySQL 8 with Security Script:
+
+When installing __MySQL__ fresh, default settings are considered weak by most standards and cause concern for potentially allowing intrusion or exploiting hackers. A solution is to run the installation security script that comes with the __MySQL__ installation.
+
+First, use the following command to launch the __(mysql_secure_installation)__:
+
+```
+sudo mysql_secure_installation
+```
+
+You will be prompted to enter your __root password, and then__ you will see a question about VALIDATE PASSWORD COMPONENT; this is to set password complexity checks; for most, the default is fine.
+
+Next, follow below:
+
++ Setting the password for root accounts.
++ Removing root accounts that are accessible from outside the local host.
++ Removing anonymous-user accounts.
++  Removing the test database, which by default can be accessed by anonymous users.
+
+Example Only:
+
+![Image alt](img/module_7_task_7_1_part1_2_8.png)
+
+
 3. Select a subject area and describe the database schema, (minimum 3 tables) 
 
 4. Create a database on the server through the console. 
