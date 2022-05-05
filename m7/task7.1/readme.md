@@ -136,6 +136,58 @@ mysql> show databases;
 
 5. Fill in tables. 
 
+![Image alt](img/module_7_task_7_1_part1_5.png)
+
+```
+mysql> use TrainingEpam;
+
+mysql> CREATE TABLE Students(
+    Student_id INT NOT NULL,
+    Student_name VARCHAR(100) NOT NULL,
+    Student_phone BIGINT NOT NULL,
+    Student_email VARCHAR(100) NOT NULL,
+    Cource_id INT NOT NULL,
+    Cource_status enum('on the go','completed'),
+    Teacher_id INT NOT NULL,
+    Average_score INT NOT NULL);
+
+mysql> show tables;
+
+mysql> INSERT INTO Students(Student_id, Student_name, Student_phone, Student_email, Cource_id, Cource_status, Teacher_id, Average_score) VALUES(1, "Valery Yurchenko", 380633753653, "vyurchenko1986@gmail.com", 1, 'completed', 1, 99);
+mysql> INSERT INTO Students(Student_id, Student_name, Student_phone, Student_email, Cource_id, Cource_status, Teacher_id, Average_score) VALUES(2, "Veronika Krasilia", 380633753002, "vkrasilia@gmail.com", 1, 'completed', 3, 64);
+mysql> INSERT INTO Students(Student_id, Student_name, Student_phone, Student_email, Cource_id, Cource_status, Teacher_id, Average_score) VALUES(3, "Viacheslav Chudnov", 380633753003, "v.goodinov@gmail.com", 2, 'on the go', 3, 77);
+mysql> INSERT INTO Students(Student_id, Student_name, Student_phone, Student_email, Cource_id, Cource_status, Teacher_id, Average_score) VALUES(4, "Vitaliy Burbela", 380633753004, "vitaliybravo@gmail.com", 1, 'completed', 2, 91);
+mysql> INSERT INTO Students(Student_id, Student_name, Student_phone, Student_email, Cource_id, Cource_status, Teacher_id, Average_score) VALUES(5, "Vitaliy Belyh", 380633753005, "v.bh@ukr.net", 1, 'completed', 2, 44);
+mysql> INSERT INTO Students(Student_id, Student_name, Student_phone, Student_email, Cource_id, Cource_status, Teacher_id, Average_score) VALUES(6, "Vitaly Morozov", 380633753006, "morozv.vitaly@gmail.com", 2, 'on the go', 3, 80);
+
+mysql> CREATE TABLE Cources(
+    Cource_id INT NOT NULL,
+    Cource_name VARCHAR(100) NOT NULL,
+    Cource_Duration INT NOT NULL);
+
+mysql> INSERT INTO Cources(Cource_id, Cource_name, Cource_Duration) VALUES(1, "DevOps", 120);
+mysql> INSERT INTO Cources(Cource_id, Cource_name, Cource_Duration) VALUES(2, "Java", 60);
+mysql> INSERT INTO Cources(Cource_id, Cource_name, Cource_Duration) VALUES(3, "JavaScript", 90);
+mysql> INSERT INTO Cources(Cource_id, Cource_name, Cource_Duration) VALUES(4, "Web", 60);
+
+mysql> select * from Cources;
+
+mysql> CREATE TABLE Teachers(
+    Teacher_id INT NOT NULL,
+    Teacher_name VARCHAR(100) NOT NULL,
+    Teacher_phone BIGINT NOT NULL,
+    Teacher_email VARCHAR(100) NOT NULL);
+
+mysql> INSERT INTO Teachers(Teacher_id, Teacher_name, Teacher_phone, Teacher_email) VALUES(1, "Aleksandr Pokatilov", 380667865653, "sasha.pokatilov@gmail.com");
+mysql> INSERT INTO Teachers(Teacher_id, Teacher_name, Teacher_phone, Teacher_email) VALUES(2, "Oleksandr Klykov", 380503786453, "klykovaleksandr@ukr.net");
+mysql> INSERT INTO Teachers(Teacher_id, Teacher_name, Teacher_phone, Teacher_email) VALUES(3, "Richard Handrix", 380735853653, "0evel00@gmail.com");
+
+mysql> show tables;
+mysql> select * from Cources;
+mysql> select * from Students;
+mysql> select * from Teachers;
+```
+
 6. Construct and execute SELECT operator with WHERE, GROUP BY and ORDER BY. 
 
 7. Execute other different SQL queries DDL, DML, DCL. 
