@@ -304,6 +304,24 @@ mysql> SELECT Host, User FROM user;
 mysql> quit
 ```
 
+OK, now let's check users privilegies on a practic:
+
+Sammy have a rights to create tables and modify\add columns.
+
+![Image alt](img/module_7_task_7_1_part1_8_1.png)
+
+```
+mysql -u Aleksandr -p
+
+mysql> use vyurchenko;
+
+mysql> select * from Students;
+
+mysql> create table mytesttable (id int, lastname varchar(50), firstname varchar (50));
+
+mysql> quit
+```
+
 9. Make a selection from the main table DB MySQL.
 
 PART 2
