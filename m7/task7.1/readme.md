@@ -360,6 +360,28 @@ mysql> quit
 
 ![Image alt](img/module_7_task_7_1_part1_8_3.png)
 
+And Valery have all rights for this database
+
+mysql -u Valery -potd0RJWC!
+
+```
+mysql> use vyurchenko;
+
+mysql> select * from Students;
+
+mysql> INSERT INTO Students(Student_id, Student_name, Student_phone, Student_email, Cource_id, Cource_status, Teacher_id, Average_score) VALUES(6, "Vitaly Morozov", 380633753006, "morozv.vitaly@gmail.com", 2, 'on the go', 3, 80);
+
+mysql> select * from Students;
+
+mysql> select * from Students order by Student_id;
+
+mysql> drop table Students;
+
+mysql> quit
+```
+
+![Image alt](img/module_7_task_7_1_part1_8_4.png)
+
 9. Make a selection from the main table DB MySQL.
 
 PART 2
