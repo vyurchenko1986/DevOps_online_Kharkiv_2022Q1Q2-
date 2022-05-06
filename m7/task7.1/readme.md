@@ -277,6 +277,8 @@ mysql> COMMIT;
 
 Let's create users with names Aleksandr, Danyil, Matvii, Valery:
 
+![Image alt](img/module_7_task_7_1_part1_8.png)
+
 ```
 mysql> CREATE USER 'Aleksandr'@'%' IDENTIFIED WITH mysql_native_password BY 'iNEglzEK!';
 
@@ -296,6 +298,9 @@ mysql> GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RE
 
 mysql> FLUSH PRIVILEGES;
 
+mysql> USE mysql;
+
+mysql> SELECT Host, User FROM user;
 mysql> quit
 ```
 
