@@ -308,8 +308,6 @@ OK, now let's check users privilegies on a practic:
 
 Sammy have a rights to create tables and modify\add columns.
 
-![Image alt](img/module_7_task_7_1_part1_8_1.png)
-
 ```
 mysql -u Aleksandr -p"iNEglzEK!"
 
@@ -324,6 +322,19 @@ mysql> CREATE TABLE myTestTable01(
 
 mysql> quit
 ```
+![Image alt](img/module_7_task_7_1_part1_8_1.png)
+
+Danyil have rights to Delete some data from tables, delete tables and view info in tables.
+
+```
+mysql -u Danyil -pFNzj0tam!
+mysql> use vyurchenko;
+mysql> select * from Students;
+mysql> update Students set  Student_email="test@ukr.net",  Student_phone="380630000000" where Student_id=5;
+mysql> delete from Students where Student_id=5;
+mysql> quit
+```
+![Image alt](img/module_7_task_7_1_part1_8_2.png)
 
 9. Make a selection from the main table DB MySQL.
 
