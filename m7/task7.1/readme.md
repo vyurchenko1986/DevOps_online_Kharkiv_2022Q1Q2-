@@ -362,9 +362,9 @@ mysql> quit
 
 And Valery have all rights for this database
 
+```
 mysql -u Valery -potd0RJWC!
 
-```
 mysql> use vyurchenko;
 
 mysql> select * from Students;
@@ -381,6 +381,8 @@ mysql> quit
 ```
 
 ![Image alt](img/module_7_task_7_1_part1_8_4.png)
+
+![Image alt](img/module_7_task_7_1_part1_8_5.png)
 
 9. Make a selection from the main table DB MySQL.
 
