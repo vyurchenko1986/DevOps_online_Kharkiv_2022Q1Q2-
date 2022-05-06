@@ -311,13 +311,16 @@ Sammy have a rights to create tables and modify\add columns.
 ![Image alt](img/module_7_task_7_1_part1_8_1.png)
 
 ```
-mysql -u Aleksandr -p
+mysql -u Aleksandr -p"iNEglzEK!"
 
 mysql> use vyurchenko;
 
 mysql> select * from Students;
 
-mysql> create table mytesttable (id int, lastname varchar(50), firstname varchar (50));
+mysql> CREATE TABLE myTestTable01(
+    id INT NOT NULL,
+    lastname VARCHAR(100) NOT NULL,
+    firstname VARCHAR(100) NOT NULL);
 
 mysql> quit
 ```
