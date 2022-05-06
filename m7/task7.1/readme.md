@@ -275,6 +275,30 @@ mysql> COMMIT;
 
 8. Create a database of new users with different privileges. Connect to the database as a new user and verify that the privileges allow or deny certain actions. 
 
+Let's create users with names Aleksandr, Danyil, Matvii, Valery:
+
+```
+mysql> CREATE USER 'Aleksandr'@'%' IDENTIFIED WITH mysql_native_password BY 'iNEglzEK!';
+
+mysql> GRANT CREATE, ALTER on *.* TO 'Aleksandr'@'%' WITH GRANT OPTION;
+
+mysql> CREATE USER 'Danyil'@'%' IDENTIFIED WITH mysql_native_password BY 'FNzj0tam!';
+
+mysql> GRANT DROP, DELETE, SELECT on *.* TO 'Danyil'@'%' WITH GRANT OPTION;
+
+mysql> CREATE USER 'Matvii'@'%' IDENTIFIED WITH mysql_native_password BY 'ZTmDePpG!';
+
+mysql> GRANT SELECT on *.* TO 'Matvii'@'%' WITH GRANT OPTION;
+
+mysql> CREATE USER 'Valery'@'%' IDENTIFIED WITH mysql_native_password BY 'otd0RJWC!';
+
+mysql> GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'Valery'@'%' WITH GRANT OPTION;
+
+mysql> FLUSH PRIVILEGES;
+
+mysql> quit
+```
+
 9. Make a selection from the main table DB MySQL.
 
 PART 2
