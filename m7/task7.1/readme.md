@@ -200,6 +200,22 @@ mysql> SELECT Student_id, Student_name, Student_email, AVG(Average_score) FROM S
 
 ```
 
+Executed some other SQL queries:
+
+![Image alt](img/module_7_task_7_1_part1_6-2.png)
+
+```
+# Let's count the number of students who have completed at least one course:
+
+mysql> SELECT COUNT(DISTINCT Student_id) AS StudentsThatCompetedOneCourse FROM Students WHERE Cource_status='completed';
+
+# Let's find the best and worst students:
+
+mysql> SELECT Student_id, Student_name, Cource_id, MIN(Average_score) FROM Students WHERE Average_score = (SELECT MIN(Average_score) FROM Students);
+
+mysql> SELECT Student_id, Student_name, Cource_id, MAX(Average_score) FROM Students WHERE Average_score = (SELECT MAX(Average_score) FROM Students);
+```
+
 7. Execute other different SQL queries DDL, DML, DCL. 
 
 8. Create a database of new users with different privileges. Connect to the database as a new user and verify that the privileges allow or deny certain actions. 
