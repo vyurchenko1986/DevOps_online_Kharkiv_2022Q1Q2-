@@ -386,6 +386,23 @@ mysql> quit
 
 9. Make a selection from the main table DB MySQL.
 
+```
+mysql> use mysql
+
+mysql> show tables;
+
+mysql> SELECT user,authentication_string,plugin,host FROM mysql.user;
+
+mysql> select * from db;
+
+mysql> select * from global_grants;
+```
+![Image alt](img/module_7_task_7_1_part1_9.png)
+
+![Image alt](img/module_7_task_7_1_part1_9_1.png)
+
+![Image alt](img/module_7_task_7_1_part1_9_2.png)
+
 PART 2
 
 10. Make backup of your database. 
