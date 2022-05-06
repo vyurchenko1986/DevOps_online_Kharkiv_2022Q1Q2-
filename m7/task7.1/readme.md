@@ -218,6 +218,17 @@ mysql> SELECT Student_id, Student_name, Cource_id, MAX(Average_score) FROM Stude
 
 7. Execute other different SQL queries DDL, DML, DCL. 
 
+![Image alt](img/module_7_task_7_1_part1_7.png)
+
+These SQL commands are mainly categorized into four categories as: 
+
++ DDL – Data Definition Language
++ DQl – Data Query Language
++ DML – Data Manipulation Language
++ DCL – Data Control Language
+
++ Though many resources claim there to be another category of SQL clauses TCL – Transaction Control Language. So we will see in detail about TCL as well
+
 8. Create a database of new users with different privileges. Connect to the database as a new user and verify that the privileges allow or deny certain actions. 
 
 9. Make a selection from the main table DB MySQL.
