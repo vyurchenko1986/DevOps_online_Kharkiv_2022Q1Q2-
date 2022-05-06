@@ -229,6 +229,50 @@ These SQL commands are mainly categorized into four categories as:
 
 + Though many resources claim there to be another category of SQL clauses TCL – Transaction Control Language. So we will see in detail about TCL as well
 
+Example DDL commands:
+```
+# This query will create a new database in SQL and name the database as my_database.
+
+mysql> CREATE DATABASE my_database;
+```
+ 
+Example DQL commands:
+
+```
+# To fetch the entire table or all the fields in the table:
+
+mysql> SELECT * FROM table_name;
+```
+
+Example DML commands:
+
+```
+# Inserting all columns of a table: We can copy all the data of a table and insert into in a different table.
+
+mysql> INSERT INTO first_table SELECT * FROM second_table;
+
+# first_table: name of first table.
+# second_table: name of second table. 
+```
+
+Example DCL commands:
+
+```
+# Granting SELECT Privilege to a User in a Table: To grant Select Privilege to a table named “users” where User Name is Amit, the following GRANT statement should be executed.
+
+mysql> GRANT SELECT ON Users TO'Amit'@'localhost;
+```
+
+Example TCL commands:
+
+```
+# Following is an example which would delete those records from the table which have age = 20 and then COMMIT the changes in the database. 
+Queries: 
+ 
+mysql> DELETE FROM Student WHERE AGE = 20;
+mysql> COMMIT;
+```
+
 8. Create a database of new users with different privileges. Connect to the database as a new user and verify that the privileges allow or deny certain actions. 
 
 9. Make a selection from the main table DB MySQL.
