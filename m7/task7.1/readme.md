@@ -227,7 +227,7 @@ These SQL commands are mainly categorized into four categories as:
 + DML – Data Manipulation Language
 + DCL – Data Control Language
 
-+ Though many resources claim there to be another category of SQL clauses TCL – Transaction Control Language. So we will see in detail about TCL as well
++ Though many resources claim there to be another category of SQL clauses TCL – Transaction Control Language.
 
 Example DDL commands:
 ```
