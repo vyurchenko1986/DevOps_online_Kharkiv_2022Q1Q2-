@@ -188,6 +188,18 @@ mysql> select * from Teachers;
 
 6. Construct and execute SELECT operator with WHERE, GROUP BY and ORDER BY. 
 
+![Image alt](img/module_7_task_7_1_part1_6.png)
+
+```
+mysql> USE TrainingEpam;
+mysql> DESCRIBE Students;
+mysql> SELECT * FROM Students;
+
+mysql> SET SESSION sql_mode='';
+mysql> SELECT Student_id, Student_name, Student_email, AVG(Average_score) FROM Students WHERE Cource_status='completed' GROUP BY Student_name ORDER BY AVG(Average_score);
+
+```
+
 7. Execute other different SQL queries DDL, DML, DCL. 
 
 8. Create a database of new users with different privileges. Connect to the database as a new user and verify that the privileges allow or deny certain actions. 
