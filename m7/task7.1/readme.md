@@ -334,7 +334,31 @@ mysql> update Students set  Student_email="test@ukr.net",  Student_phone="380630
 mysql> delete from Students where Student_id=5;
 mysql> quit
 ```
+
 ![Image alt](img/module_7_task_7_1_part1_8_2.png)
+
+Matvii have only viewing right.
+
+```
+mysql -u Matvii -pZTmDePpG!
+
+mysql> use vyurchenko;
+
+mysql> select * from Students;
+
+mysql> CREATE TABLE myTestTable02(
+        id INT NOT NULL,
+        lastname VARCHAR(100) NOT NULL,
+        firstname VARCHAR(100) NOT NULL);
+
+mysql> update Students set  Student_email="test@ukr.net",  Student_phone="380630000000" where Student_id=4;
+
+mysql> delete from Students where Student_id=4;
+
+mysql> quit
+```
+
+![Image alt](img/module_7_task_7_1_part1_8_3.png)
 
 9. Make a selection from the main table DB MySQL.
 
