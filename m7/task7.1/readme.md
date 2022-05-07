@@ -410,9 +410,28 @@ PART 2
 ```
 sudo mysqldump -u root -p TrainingEpam > /home/owner/TrainingEpam.sql
 ```
+
 ![Image alt](img/module_7_task_7_1_part2_10.png)
 
 11. Delete the table and/or part of the data in the table. 
+
+```
+mysql -u root -p
+
+mysql> show databases;
+
+mysql> use TrainingEpam;
+
+mysql> show tables;
+
+mysql> drop table TrainingEpam.Students;
+
+mysql> show tables;
+
+mysql> exit;
+```
+
+![Image alt](img/module_7_task_7_1_part2_11.png)
 
 12. Restore your database. 
 
