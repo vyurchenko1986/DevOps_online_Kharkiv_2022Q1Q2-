@@ -446,7 +446,7 @@ mysql> show tables;
 
 mysql> select * from Students;
 
-mysql> quit
+mysql> quit;
 ```
 
 ![Image alt](img/module_7_task_7_1_part2_12.png)
