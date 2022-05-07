@@ -407,6 +407,11 @@ PART 2
 
 10. Make backup of your database. 
 
+```
+sudo mysqldump -u root -p TrainingEpam > /home/owner/TrainingEpam.sql
+```
+![Image alt](img/module_7_task_7_1_part2_10.png)
+
 11. Delete the table and/or part of the data in the table. 
 
 12. Restore your database. 
