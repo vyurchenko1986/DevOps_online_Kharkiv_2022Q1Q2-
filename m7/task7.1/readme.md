@@ -435,6 +435,22 @@ mysql> exit;
 
 12. Restore your database. 
 
+```
+sudo mysql -u root -p TrainingEpam < /home/owner/TrainingEpam.sql
+
+mysql -u root -p
+
+mysql> use TrainingEpam
+
+mysql> show tables;
+
+mysql> select * from Students;
+
+mysql> quit
+```
+
+![Image alt](img/module_7_task_7_1_part2_12.png)
+
 13. Transfer your local database to RDS AWS. 
 
 14. Connect to your database. 
