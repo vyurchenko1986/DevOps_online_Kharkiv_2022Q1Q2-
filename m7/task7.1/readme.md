@@ -453,6 +453,22 @@ mysql> quit;
 
 13. Transfer your local database to RDS AWS. 
 
+```
+sudo mysql -h aws-training-epam-database-1.cwmspy0tftmn.us-east-1.rds.amazonaws.com -u admin -p
+
+mysql> show databases;
+
+mysql> create database TrainingEpam;
+
+mysql> show databases;
+
+quit;
+
+sudo mysql -h aws-training-epam-database-1.cwmspy0tftmn.us-east-1.rds.amazonaws.com -u admin -p TrainingEpam < /home/owner/TrainingEpam.sql
+```
+
+![Image alt](img/module_7_task_7_1_part2_13.png)
+
 14. Connect to your database. 
 
 15. Execute SELECT operator similar step 6. 
