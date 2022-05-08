@@ -482,6 +482,24 @@ quit
 
 15. Execute SELECT operator similar step 6. 
 
+```
+sudo mysql -h aws-training-epam-database-1.cwmspy0tftmn.us-east-1.rds.amazonaws.com -u admin -p
+
+mysql> USE TrainingEpam;
+
+mysql> DESCRIBE Students;
+
+mysql> SELECT * FROM Students;
+
+mysql> SET SESSION sql_mode='';
+
+mysql> SELECT Student_id, Student_name, Student_email, AVG(Average_score) FROM Students WHERE Cource_status='completed' GROUP BY Student_name ORDER BY AVG(Average_score);
+
+mysql> quit;
+```
+
+![Image alt](img/module_7_task_7_1_part2_15.png)
+
 16. Create the dump of your database.
 
 PART 3 – MongoDB
