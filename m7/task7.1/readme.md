@@ -470,6 +470,15 @@ sudo mysql -h aws-training-epam-database-1.cwmspy0tftmn.us-east-1.rds.amazonaws.
 ![Image alt](img/module_7_task_7_1_part2_13.png)
 
 14. Connect to your database. 
+```
+sudo mysql -h aws-training-epam-database-1.cwmspy0tftmn.us-east-1.rds.amazonaws.com -u admin -p
+
+mysql> show databases;
+
+quit
+```
+
+![Image alt](img/module_7_task_7_1_part2_14.png)
 
 15. Execute SELECT operator similar step 6. 
 
