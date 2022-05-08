@@ -504,6 +504,11 @@ mysql> quit;
 
 16. Create the dump of your database.
 
+```
+sudo mysqldump -u admin -h aws-training-epam-database-1.cwmspy0tftmn.us-east-1.rds.amazonaws.com -p --databases TrainingEpam > /home/owner/AWS_RDS_TrainingEpam.sql
+```
+
+
 PART 3 – MongoDB
 
 17. Create a database. Use the use command to connect to a new database (If it doesn't exist, Mongo will create it when you write to it). 
