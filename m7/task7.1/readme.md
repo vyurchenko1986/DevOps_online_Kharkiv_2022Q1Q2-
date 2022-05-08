@@ -453,6 +453,8 @@ mysql> quit;
 
 13. Transfer your local database to RDS AWS. 
 
+![Image alt](img/module_7_task_7_1_part2_13-0.gif)
+
 ```
 sudo mysql -h aws-training-epam-database-1.cwmspy0tftmn.us-east-1.rds.amazonaws.com -u admin -p
 
