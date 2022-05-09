@@ -588,4 +588,34 @@ db.Students.bulkWrite([
 
 ![Image alt](img/module_7_task_7_1_part3_19-0.png)
 
+```
+db.Cources.bulkWrite([ 
+    {
+        insertOne : {
+            "document": {Cource_id: 1, Cource_name: "DevOps", Cource_Duration: 120}
+        }
+    },
+
+    {
+        insertOne : {
+            "document": {Cource_id: 2, Cource_name: "Java", Cource_Duration: 60}
+        }
+    },
+
+    {
+        insertOne : {
+            "document": {Cource_id: 3, Cource_name: "JavaScript", Cource_Duration: 90}
+        }
+    },
+
+    {
+        insertOne : {
+            "document": {Cource_id: 4, Cource_name: "Web", Cource_Duration: 60}
+        }
+    }
+])
+```
+
+![Image alt](img/module_7_task_7_1_part3_19-1.png)
+
 20. Use find() to list documents out.
