@@ -513,6 +513,22 @@ PART 3 – MongoDB
 
 17. Create a database. Use the use command to connect to a new database (If it doesn't exist, Mongo will create it when you write to it). 
 
+```
+sudo apt update
+sudo apt install curl apt-transport-https software-properties-common gnupg2
+
+echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/4.4 main" | sudo tee /etc/apt/sources.list.d/mongodb-org.list
+wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | apt-key add -
+
+sudo apt update
+sudo apt install mongodb-org
+
+mongod --version
+mongo --host localhost:27017
+use TrainingEpam
+```
+![Image alt](img/module_7_task_7_1_part3_17.png)
+
 18. Create a collection. Use db.createCollection to create a collection. I'll leave the subject up to you. Run show dbs and show collections to view your database and
 collections. 
 
