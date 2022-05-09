@@ -655,3 +655,15 @@ mongo --host localhost:27017
 ![Image alt](img/module_7_task_7_1_part3_20-1.png)
 
 ![Image alt](img/module_7_task_7_1_part3_20-2.png)
+
+*Create MongoDB backups, restore:
+
+```
+sudo mongodump --db TrainingEpam --out /home/owner/mongo_bd_dump_`date +"%m-%d-%y"`
+
+sudo mongorestore --db TrainingEpam --drop /home/owner/mongo_bd_dump_05-09-22/TrainingEpam/
+```
+
+![Image alt](img/module_7_task_7_1_part3_mongodump.png)
+
+![Image alt](img/module_7_task_7_1_part3_mongorestore.png)
