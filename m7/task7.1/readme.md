@@ -525,12 +525,23 @@ sudo apt install mongodb-org
 
 mongod --version
 mongo --host localhost:27017
-use TrainingEpam
+> use TrainingEpam
 ```
+
 ![Image alt](img/module_7_task_7_1_part3_17.png)
 
-18. Create a collection. Use db.createCollection to create a collection. I'll leave the subject up to you. Run show dbs and show collections to view your database and
-collections. 
+18. Create a collection. Use db.createCollection to create a collection. I'll leave the subject up to you. Run show dbs and show collections to view your database and collections. 
+
+```
+> use TrainingEpam
+> db.createCollection("Students")
+> db.createCollection("Cources")
+> db.createCollection("Teachers")
+
+> show dbs
+> show collections
+```
+![Image alt](img/module_7_task_7_1_part3_18.png)
 
 19. Create some documents. Insert a couple of documents into your collection. I'll leave the subject matter up to you, perhaps cars or hats.
 
