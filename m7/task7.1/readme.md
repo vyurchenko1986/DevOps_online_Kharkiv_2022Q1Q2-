@@ -547,7 +547,7 @@ mongo --host localhost:27017
 19. Create some documents. Insert a couple of documents into your collection. I'll leave the subject matter up to you, perhaps cars or hats.
 
 ```
-db.Students.bulkWrite([ 
+> db.Students.bulkWrite([ 
     {
         insertOne : {
             "document": {Student_id: 1, Student_name: "Valery Yurchenko", Student_phone: "+380633753653", Student_email: "vyurchenko1986@gmail.com", Cource_id: 1, Cource_status: "completed", Teacher_id: 1, Average_score: 99}
@@ -589,7 +589,7 @@ db.Students.bulkWrite([
 ![Image alt](img/module_7_task_7_1_part3_19-0.png)
 
 ```
-db.Cources.bulkWrite([ 
+> db.Cources.bulkWrite([ 
     {
         insertOne : {
             "document": {Cource_id: 1, Cource_name: "DevOps", Cource_Duration: 120}
@@ -619,7 +619,7 @@ db.Cources.bulkWrite([
 ![Image alt](img/module_7_task_7_1_part3_19-1.png)
 
 ```
-db.Teachers.bulkWrite([ 
+> db.Teachers.bulkWrite([ 
     {
         insertOne : {
             "document": {Teacher_id: 1, Teacher_name: "Aleksandr Pokatilov", Teacher_phone: "+380667865653", Teacher_email: "sasha.pokatilov@gmail.com"}
@@ -643,3 +643,15 @@ db.Teachers.bulkWrite([
 ![Image alt](img/module_7_task_7_1_part3_19-2.png)
 
 20. Use find() to list documents out.
+
+```
+> db.Students.find({}, {_id: 0})
+> db.Cources.find({}, {_id: 0})
+> db.Teachers.find({}, {_id: 0})
+```
+
+![Image alt](img/module_7_task_7_1_part3_20-0.png)
+
+![Image alt](img/module_7_task_7_1_part3_20-1.png)
+
+![Image alt](img/module_7_task_7_1_part3_20-2.png)
