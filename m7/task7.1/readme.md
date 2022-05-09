@@ -618,4 +618,28 @@ db.Cources.bulkWrite([
 
 ![Image alt](img/module_7_task_7_1_part3_19-1.png)
 
+```
+db.Teachers.bulkWrite([ 
+    {
+        insertOne : {
+            "document": {Teacher_id: 1, Teacher_name: "Aleksandr Pokatilov", Teacher_phone: "+380667865653", Teacher_email: "sasha.pokatilov@gmail.com"}
+        }
+    },
+
+    {
+        insertOne : {
+            "document": {Teacher_id: 2, Teacher_name: "Oleksandr Klykov", Teacher_phone: "+380503786453", Teacher_email: "klykovaleksandr@ukr.net"}
+        }
+    },
+
+    {
+        insertOne : {
+            "document": {Teacher_id: 3, Teacher_name: "Richard Handrix", Teacher_phone: "+380735853653", Teacher_email: "0evel00@gmail.com"}
+        }
+    }
+
+])
+```
+![Image alt](img/module_7_task_7_1_part3_19-2.png)
+
 20. Use find() to list documents out.
