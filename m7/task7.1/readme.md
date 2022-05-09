@@ -541,8 +541,51 @@ mongo --host localhost:27017
 > show dbs
 > show collections
 ```
+
 ![Image alt](img/module_7_task_7_1_part3_18.png)
 
 19. Create some documents. Insert a couple of documents into your collection. I'll leave the subject matter up to you, perhaps cars or hats.
+
+```
+db.Students.bulkWrite([ 
+    {
+        insertOne : {
+            "document": {Student_id: 1, Student_name: "Valery Yurchenko", Student_phone: "+380633753653", Student_email: "vyurchenko1986@gmail.com", Cource_id: 1, Cource_status: "completed", Teacher_id: 1, Average_score: 99}
+        }
+    },
+
+    {
+        insertOne : {
+            "document": {Student_id: 2, Student_name: "Veronika Krasilia", Student_phone: "+380633753002", Student_email: "vkrasilia@gmail.com", Cource_id: 1, Cource_status: "completed", Teacher_id: 3, Average_score: 64}
+        }
+    },
+
+    {
+        insertOne : {
+            "document": {Student_id: 3, Student_name: "Viacheslav Chudnov", Student_phone: "+380633753003", Student_email: "v.goodinov@gmail.com", Cource_id: 2, Cource_status: "on the go", Teacher_id: 3, Average_score: 77}
+        }
+    },
+
+    {
+        insertOne : {
+            "document": {Student_id: 4, Student_name: "Vitaliy Burbela", Student_phone: "+380633753004", Student_email: "vitaliybravo@gmail.com", Cource_id: 1, Cource_status: "completed", Teacher_id: 2, Average_score: 91}
+        }
+    },
+
+    {
+        insertOne : {
+            "document": {Student_id: 5, Student_name: "Vitaliy Belyh", Student_phone: "+380633753005", Student_email: "v.bh@ukr.net", Cource_id: 1, Cource_status: "completed", Teacher_id: "2", Average_score: 44}
+        }
+    },
+
+    {
+        insertOne : {
+            "document": {Student_id: 6, Student_name: "Vitaly Morozov", Student_phone: "+380633753006", Student_email: "morozv.vitaly@gmail.com", Cource_id: 2, Cource_status: "on the go", Teacher_id: 3, Average_score: 80}
+        }
+    }
+])
+```
+
+![Image alt](img/module_7_task_7_1_part3_19-0.png)
 
 20. Use find() to list documents out.
