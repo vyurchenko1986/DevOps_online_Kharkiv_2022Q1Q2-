@@ -25,6 +25,7 @@ deactivate
 
 ```pip3 install pytz```
 
+![Image alt](img/module_8_task_8_1_part1_1-0.png)
 
 ```
 #!/usr/bin/env python3
