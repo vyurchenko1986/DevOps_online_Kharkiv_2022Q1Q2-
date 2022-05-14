@@ -71,8 +71,25 @@ print(f"Tuple ({type(tuple1)}): {tuple1}")
 
 ![Image alt](img/module_8_task_8_1_part1_2.png)
 
-3. Write python program, which will ask file name. File should be read, and only even
-lines should be shown.
+3. Write python program, which will ask file name. File should be read, and only even lines should be shown.
+
+```
+#!/usr/bin/env python3
+
+file_path = input("Enter file name: ")  # e.g. "text.txt"
+
+with open(file_path, 'r') as open_file:
+    lines = open_file.readlines()
+    num_lines = len([l for l in lines if l.strip(' \n') != ''])
+
+    for line in range(num_lines):
+        if not line % 2 == 0:
+            print(lines[line])
+```
+
+![Image alt](img/module_8_task_8_1_part1_3-0.png)
+
+![Image alt](img/module_8_task_8_1_part1_3.png)
 
 4. Write python program, which should read html document, parse it, and show it’s
 title.
