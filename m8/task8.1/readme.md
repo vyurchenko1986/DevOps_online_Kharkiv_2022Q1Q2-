@@ -76,7 +76,7 @@ print(f"Tuple ({type(tuple1)}): {tuple1}")
 ```
 #!/usr/bin/env python3
 
-file_path = input("Enter file name: ")  # e.g. "text.txt"
+file_path = input("Enter file name: ")  # e.g. "task8_1-3-text.txt"
 
 with open(file_path, 'r') as open_file:
     lines = open_file.readlines()
