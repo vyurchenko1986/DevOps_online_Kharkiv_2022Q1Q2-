@@ -120,4 +120,8 @@ with open(file_path, 'r') as open_file:
 
 5. Write python program, which will parse user’s text, and replace some emotions with emoji’s (Look: pip install emoji)
 
+```pip3 install emoji```
+
+![Image alt](img/module_8_task_8_1_part1_5-0.png)
+
 6. Write program, that will show basic PC information (OS, RAM amount, HDD’s, and etc.)
