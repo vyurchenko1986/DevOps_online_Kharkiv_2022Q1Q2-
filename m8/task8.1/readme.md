@@ -1,4 +1,5 @@
 ##### EPAM University Programs DevOps external course
+
 # Module 8 - Python Intro  [task8.1]
 
 PART 1
@@ -145,4 +146,5 @@ command = {
 for t, c in command.items(): 
     systemINF(t, c)
 ```
+
 ![Image alt](img/module_8_task_8_1_part1_6.gif)
