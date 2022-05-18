@@ -15,3 +15,5 @@
 + Lecture 19. Linux Administration with Bash [[task6.1]](https://github.com/vyurchenko1986/DevOps_online_Kharkiv_2022Q1Q2-/tree/main/m6/task6.1)
 
 + 7 Database Administration [[task7.1]](https://github.com/vyurchenko1986/DevOps_online_Kharkiv_2022Q1Q2-/tree/main/m7/task7.1)
+
++ 8 Python Intro [[task8.1]](https://github.com/vyurchenko1986/DevOps_online_Kharkiv_2022Q1Q2-/tree/main/m8/task8.1)
