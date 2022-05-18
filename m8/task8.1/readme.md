@@ -125,6 +125,30 @@ with open(file_path, 'r') as open_file:
 
 ![Image alt](img/module_8_task_8_1_part1_5-0.png)
 
+```
+#!/usr/bin/env python3
+
+import emoji
+import re
+
+
+def replacedTextEmoji(s):
+    result = emoji.emojize(s, language='alias')
+    return result
+
+
+originalText = input("Enter TXT:\n")
+eSearch = re.search(r'\:+[A-Za-z0-9_-]+\:', originalText)
+
+result = replacedTextEmoji(eSearch.group(0))
+replacedText = re.sub('\:+[A-Za-z0-9_-]+\:', result, originalText)
+
+print(f"{replacedText}")
+```
+
+![Image alt](img/module_8_task_8_1_part1_5-1.png)
+
+
 6. Write program, that will show basic PC information (OS, RAM amount, HDD’s, and etc.)
 
 ```
