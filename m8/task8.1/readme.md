@@ -136,7 +136,6 @@ print(emoji.emojize(input("Enter text: "), language='alias'))
 
 ![Image alt](img/module_8_task_8_1_part1_5-1.png)
 
-
 6. Write program, that will show basic PC information (OS, RAM amount, HDD’s, and etc.)
 
 ```
