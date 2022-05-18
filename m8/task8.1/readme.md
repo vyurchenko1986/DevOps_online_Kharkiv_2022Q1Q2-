@@ -131,7 +131,7 @@ with open(file_path, 'r') as open_file:
 import emoji
 print(emoji.emojize(input("Enter text: "), language='alias'))
 
-# Enter text: :hand: Привет! :point_up: DevOps — это вам не шутки... :ok_hand:
+# Enter text: ":hand: Привет! :point_up: DevOps — это вам не шутки... :ok_hand:"
 ```
 
 ![Image alt](img/module_8_task_8_1_part1_5-1.png)
