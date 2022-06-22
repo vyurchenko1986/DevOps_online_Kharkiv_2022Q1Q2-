@@ -17,3 +17,5 @@
 + 7 Database Administration [[task7.1]](https://github.com/vyurchenko1986/DevOps_online_Kharkiv_2022Q1Q2-/tree/main/m7/task7.1)
 
 + 8 Python Intro [[task8.1]](https://github.com/vyurchenko1986/DevOps_online_Kharkiv_2022Q1Q2-/tree/main/m8/task8.1)
+
++ Final project: CI/CD pipeline Spring Petclinic [[Final project]](https://github.com/vyurchenko1986/DevOps_online_Kharkiv_2022Q1Q2-/tree/develop/final_project)
