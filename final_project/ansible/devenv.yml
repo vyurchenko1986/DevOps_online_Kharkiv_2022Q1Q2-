@@ -1,0 +1,80 @@
+---
+- name: Install Docker Engine on Debian and Starting app
+  hosts: dev
+  become: yes
+
+  tasks:
+    - name: Set up the repository
+      apt:
+        name: "{{item}}"
+        state: present
+        update_cache: yes
+      loop:
+        - ca-certificates
+        - curl
+        - gnupg
+        - lsb-release
+
+    - name: Add Docker official GPG key
+      apt_key:
+        url: https://download.docker.com/linux/debian/gpg
+        state: present
+
+    - name: Use the following command to set up the repository
+      apt_repository:
+        repo: deb https://download.docker.com/linux/debian {{ ansible_distribution_release }} stable
+        state: present
+
+    - name: Install Docker Engine
+      apt:
+        name: "{{item}}"
+        state: latest
+        update_cache: yes
+      loop:
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+        - docker-compose-plugin
+
+    - name: check docker is active
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Create the docker group
+      ansible.builtin.group:
+        name: docker
+        state: present
+
+    - name: Add your user to the docker group
+      user:
+        name: "{{ansible_user}}"
+        groups: docker
+        append: yes
+    - name: Ensure python3-docker package is installed
+      apt:
+        name: python3-docker
+        state: present
+        update_cache: True
+
+    - name: Get a list of all running containers
+      docker_host_info:
+        containers: True
+      register: docker_info
+
+    - name: Stop all running containers
+      docker_container:
+        name: '{{ item.Names[0] | regex_replace("^/", "") }}'
+        state: stopped
+      loop: "{{ docker_info.containers }}"
+
+    - name: Remove unused images
+      command: "docker image prune -a -f"
+
+    - name: Remove unused data
+      command: "docker system prune -a -f"
+
+    - name: Start a container
+      command: "docker run -d --rm -p 8080:8080 vyurchenko1986/pet-clinic:latest"
+
