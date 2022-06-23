@@ -68,5 +68,5 @@ Used tools:
 
 ### Task 8.1 Python Intro (under revisioning)
 >
-[Task 4.1](./m8/task8.1/)
+[Task 8.1](./m8/task8.1/)
 
